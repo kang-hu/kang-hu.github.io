@@ -1,0 +1,175 @@
+﻿<html>
+<head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<title>Componets</title>
+<style>
+    span {
+        color: red;
+    }
+</style>
+</head>
+    <body>
+        <div id="app1" class="container">
+            <h1>app Scope1</h1>
+            <local-component></local-component>
+            <my-component1></my-component1>
+        </div>
+        <hr>
+        <div id="app2" class="container">
+            <h1>app Scope2</h1>
+            <my-component1></my-component1>
+            <my-component2></my-component2>
+            <my-component3 item1="props:item1"></my-component3> 
+            <my-component3 item2="props:item2 must be strings when using array syntax. "></my-component3> 
+            <my-component4 v-bind:share=shareNum v-bind:obj="{name: 'amazing story', writer: 'Mr. Weebl'}"></my-component4> 
+            <button v-on:click="shareNum++">share the story</button>
+            <hr>
+            <h1>Reusability</h1>
+            <my-component5 v-bind:obj=api></my-component5>
+        </div>
+        <hr>
+        <div id="app3" class="container">
+            <h1>Let's hear some stories!</h1>
+                <ul class="list-group">
+                    <story-component v-for="story in stories" v-bind:prop1="story" v-bind:prop2="favorite"></story-component>
+                </ul>
+            <pre>{{ $data }}</pre>
+
+        </div>
+        <template id="story-template">
+            <li class="list-group-item">
+                {{ prop1.writer }} said "{{ prop1.plot }}".Story upvotes {{ prop1.upvotes }}.
+                <button v-show="!prop1.voted" v-on:click="upvote" class="btn btn-default">Upvote</button>
+                <button v-show="!isFavorite" v-on:click="setFavorite" class="btn btn-primary">Favorite</button>
+                <span v-show="isFavorite" class="glyphicon glyphicon-star pull-right" aria-hidden="true"></span>
+            </li>
+        </template>
+        <hr>
+        <script type="text/template">
+            alert('ignore');
+        </script>
+        <script type="text/template" id="cp-2">
+            <h1>my-component2: use script type="text/template"</h1>
+        </script>
+        <template id="cp-3">
+            <h1>my-component3: use template tag and props
+                <br><span>{{item1}}</span><span>{{item2}}</span></h1>
+        </template>
+        <template id="cp-4">
+            <h1>my-component4:<br><span>{{obj.name}}</span>writeby<span>{{obj.writer}}</span>has<span>{{share}}</span>share</h1>
+        </template>
+        <template id="cp-5">
+            <h1>my-component5:here comes <span>{{obj.title}},{{obj.desc}}</span>,only need to fix template</h1>
+        </template>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.js"></script>
+
+    <script type="text/javascript">
+        var local = {
+            template: "<h1>local component : <br>this component will only be available in parent's template<h1>"
+        }
+
+        Vue.component('my-component1', {
+            template: "<h1>my-component1: inline expression<h1>"
+        });
+
+        Vue.component('my-component2', {
+            template: "#cp-2"
+        });
+
+        Vue.component('my-component3', {
+            props: ['item1','item2'],
+            template: "#cp-3"
+        });
+
+        Vue.component('my-component4', {
+            props: ['obj','share'],
+            template: "#cp-4"
+        });
+
+        Vue.component('my-component5', {
+            props: ['obj'],
+            template: '#cp-5'
+        });
+
+        new Vue({
+            el: '#app1',
+            data: {
+                appData: 'hello'
+            },
+            components: {
+            // this component will only be available in parent's template
+                'local-component': local
+            }
+        })
+
+        new Vue({
+            el: '#app2',
+            data: {
+                appData: 'hello',
+                shareNum: 0,
+                api: {
+                    title: 'api title',
+                    desc: 'this is about...'
+                } 
+            },
+            method: {
+            },
+            mounted: function(){
+
+            }
+        })
+
+        Vue.component('story-component', {
+            template: "#story-template",
+            props: ['prop1','prop2'],
+            methods:{
+                upvote: function(){
+                    this.prop1.upvotes += 1;
+                    this.prop1.voted = true;
+                },
+                setFavorite: function(){
+                    this.prop2 = this.story;
+                }
+            },
+            computed:{
+                isFavorite: function(){
+                    return this.story == this.prop2;
+                }
+            }
+        });
+
+        new Vue({
+            el: '#app3',
+            data: {
+                stories: [
+                    {
+                        plot: 'My horse is amazing.',
+                        writer: 'Mr. Weebl',
+                        upvotes: 28,
+                        voted: false,
+                    },
+                    {
+                        plot: 'Narwhals invented Shish Kebab.',
+                        writer: 'Mr. Weebl',
+                        upvotes: 8,
+                        voted: false,
+                    },
+                    {
+                        plot: 'The dark side of the Force is stronger.',
+                        writer: 'Darth Vader',
+                        upvotes: 49,
+                        voted: false,
+                    },
+                    {
+                        plot: 'One does not simply walk into Mordor',
+                        writer: 'Boromir',
+                        upvotes: 74,
+                        voted: false,
+                    },
+                ],
+                favorite: {}
+            }
+        });
+    </script>
+</html>
