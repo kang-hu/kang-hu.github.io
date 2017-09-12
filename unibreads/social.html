@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>social plugin test</h1>
+    <!-- google+ -->
+    <div class="g-plus" data-action="share" data-annotation="none" data-href="http://www.cpbl.com.tw/"></div>
+    <a href="https://plus.google.com/share?url=http://www.cpbl.com.tw/" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><img
+  src="https://www.gstatic.com/images/icons/gplus-32.png" alt="Share on Google+"/></a>
+    <!-- line -->
+    <div class="line-it-button" data-lang="zh_Hant" data-type="share-d" data-url="http://www.books.com.tw/" style="display: none;"></div>
+    <!-- FB -->
+    <div class="fb-share-button" data-href="http://www.cpbl.com.tw/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.cpbl.com.tw%2F&amp;src=sdkpreparse">分享</a></div>
+    <!-- Tweet -->
+<!--     <a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet?via=scotch_io"
+        data-url="https://twitter.com/intent/tweet?via=scotch_io"
+        data-size="large">
+        Tweet
+    </a> -->
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.books.com.tw/">Tweet</a>
+    <!-- Plurk -->
+    <a target="_blank" href="http://plurk.com/?qualifier=shares&status=http://www.cpbl.com.tw/ (標題)">
+    <img title="分享到噗浪！" src="圖片網址" border="0" width="20" /></a>
+    <ul>
+        <li><a href="https://developers.google.com/+/web/share/" target="_blank">GOOGLE+</a></li>
+        <li><a href="https://media.line.me/zh_TW/how_to_install#lineitbutton" target="_blank">Line</a></li>
+        <li><a href="https://developers.facebook.com/docs/plugins/share-button/?locale=zh_TW#" target="_blank">FB</a></li>
+        <li><a href="http://www.q3060.com/list3/list122/82141.html" target="_blank">plurk</a></li>
+        <li><a href="https://developers.facebook.com/docs/plugins/share-button/?locale=zh_TW#" target="_blank">TWITTER</a></li>
+    </ul>
+    <a href="https://about.twitter.com/cs/resources/buttons#tweet">產生twitter button</a>
+    <a href="https://scotch.io/tutorials/how-to-share-webpages-with-twitter">twitter</a>
+    <!-- google+ -->
+    <script src="https://apis.google.com/js/platform.js" async defer>
+        {lang: 'zh-TW'}
+    </script>
+    <!-- line -->
+    <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+    <!-- FB -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.10&appId=262477160615577";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- twitter -->
+    <script>
+        window.twttr = (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+            t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+
+            t._e = [];
+            t.ready = function(f) {
+                t._e.push(f);
+            };
+            return t;
+        }(document, "script", "twitter-wjs"));
+    </script>
+</body>
+</html>
