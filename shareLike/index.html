@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/Article" lang="zh-TW">
+  <!--page default Information-->
+  <!--html head-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="edge,chrome=1">
+    <title>首頁</title>
+    <meta name="description" content="#{pageDesc}">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta itemprop="name" content="#{pageTitle}">
+    <meta itemprop="description" content="#{pageDesc}">
+    <meta itemprop="image" content="指定顯示圖片">
+    <meta property="og:title" content="#{pageTitle}">
+    <meta property="og:description" content="#{pageDesc}">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="指定顯示圖片">
+    <link rel="Shortcut Icon" type="images/x-icon" href="../images/fav.ico">
+    <link rel="stylesheet" href="css/main.css"><!--CDN link -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/mobile-detect/0.4.3/mobile-detect.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="lib/vue.js"></script>
+  </head>
+  <!--html body-->
+  <body>
+    <div class="l-wrap" id="app">
+      <!-- render nav view-->
+      <div class="l-main">
+        <section class="index">
+          <div class="kv" v-on:click="start(true)"></div>
+          <div class="demo-ctrl">
+            <ul>
+              <li> 
+                <button v-on:click="start(true)">還有獎品</button>
+              </li>
+              <li>
+                <button v-on:click="start(false)">沒有獎品</button>
+              </li>
+              <li>
+                <button v-on:click="goPrivacy()">隱私權條款</button>
+              </li>
+              <li>
+                <button v-on:click="popupOpen=true,showCus=true">客製化項目</button>
+              </li>
+              <li><a href="dev.html"> 
+                  <button>刮刮樂功能頁</button></a></li>
+            </ul>
+          </div>
+          <div class="popup" v-show="popupOpen" v-cloak>
+            <div class="popup__mask"></div>
+            <div class="popup__content">
+              <!-- 獎品剩餘列表-->
+              <transition name="fade">
+                <div class="awardList" v-show="showAward">
+                  <div class="custom-btn" v-on:click="initCoupon()"></div>
+                  <div class="awardList__hd">
+                    <h3 class="title">獎品獎品獎品獎</h3>
+                  </div>
+                  <div class="awardList__bd">
+                    <div class="list">
+                      <ul class="list__header clearfix">
+                        <li>獎品</li>
+                        <li>數量</li>
+                        <li>中獎機率</li>
+                      </ul>
+                      <div class="list-wrap">
+                        <ul class="list__item clearfix isOver" v-for="value in noAward">
+                          <li class="col">{{value.gifts}}</li>
+                          <li class="col">{{value.quantity}}</li>
+                          <li class="col">{{value.change}}</li>
+                        </ul>
+                        <ul class="list__item clearfix" v-for="value in hasAward">
+                          <li class="col">{{value.gifts}}</li>
+                          <li class="col">{{value.quantity}}</li>
+                          <li class="col">{{value.change}}</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </transition>
+              <!-- 獎品兌換完畢-->
+              <transition name="fade">
+                <div class="noAward" v-show="showEnd">
+                  <div class="noAward-btn" v-on:click="showEnd=false,popupOpen=false"></div>
+                </div>
+              </transition>
+              <!-- 刮刮樂-->
+              <transition name="fade">
+                <div class="coupon coupon--type1" v-show="showCoupon">
+                  <div class="custom-btn" v-on:click="initCoupon()"></div>
+                  <div class="coupon__award"></div>
+                  <div class="coupon__cover"></div>
+                </div>
+              </transition>
+              <!-- 隱私權條款-->
+              <transition name="fade">
+                <div class="privacy" v-show="privacy">
+                  <div class="custom-btn" v-on:click="privacy=false,popupOpen=false"></div>
+                  <div class="privacy__hd">
+                    <h2 class="title">隱私權條款</h2>
+                  </div>
+                  <div class="privacy__content">
+                    <div class="privacy__rule">
+                      <p>於Sharelike的服務於Sharelike的服務於Sharelike的服務於Sharelike的服務於Sharelike的服務</p><br>
+                      <ul>
+                        <li>於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share</li>
+                        <li>於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share</li>
+                      </ul>
+                      <ol>
+                        <li>於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share</li>
+                        <li>於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share</li>
+                        <li>於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share於Sharelike的服務於Sharelike的服務於Share</li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="btn-area"><a class="btn btn--submit" href="javascript:">註冊</a><a class="btn btn--cancel" href="javascript:">取消</a></div>
+                </div>
+              </transition>
+              <!-- custom-->
+              <transition name="fade">
+                <div class="custom" v-show="showCus">
+                  <div class="custom-btn" v-on:click="showCus=false,popupOpen=false"></div>
+                </div>
+              </transition>
+            </div>
+          </div>
+        </section>
+        <!--render main view-->
+      </div>
+    </div>
+    <div class="l-footer footer">
+      <div class="l-container">
+        <p>footer</p>
+      </div>
+    </div>
+    <script src="../js/app-dev.js"></script>
+  </body>
+</html>
