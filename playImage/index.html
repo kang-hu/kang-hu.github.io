@@ -35,8 +35,8 @@
                 <div class="l-container">
                     <section>
                         <h2>#手勢調整上傳圖片功能</h2>
-                        <p>目的讓使用者使用預設的頭像或上傳一張圖片，進行編輯後再將資料傳送至伺服器端進行最後壓圖。</p>
-                        <P>在行動裝置為主的需求下，加入偵測手勢取得對應事件操作CANVAS進行編輯。</P>
+                        <p>目的讓使用者選擇預設的頭像或上傳一張圖片，進行編輯後再將資料傳送至伺服器端進行最後壓圖。</p>
+                        <P>在行動裝置為主的需求下，加入偵測手勢取得對應事件操作CANVAS編輯。</P>
                     </section>
                     <section>
                         <h2>#任務</h2>
@@ -52,19 +52,19 @@
                         <button class="btn" v-on:click="useAvatar">使用預設圖片</button>
                         <div><a class="btn" href="javascript:"> 
                   <input id="fileupload" type="file" accept="image/*"></a></div>
-                        <button class="btn" id="generateImage">產生調整後的圖片</button>
                     </section>
                     <section class="merge">
                         <div class="uploadImg"></div>
-                        <h2>#編輯圖片</h2>
+                        <h2>#編輯圖片區</h2>
+                        <button class="btn" id="generateImage">產生調整後的圖片</button>
                         <div class="cropBox">
                             <canvas id="canvas"></canvas>
                             <div class="ctrl-box" id="ctrlBox"></div>
                         </div>
                     </section>
                     <section>
-                        <h2>#Generate image</h2>
-                        <div><img id="canvasImg" src="" alt="" border="5"></div>
+                        <h2>#產生圖片區</h2>
+                        <div class="generateBox"><img id="canvasImg" src="" alt="" border="5"></div>
                     </section>
                 </div>
             </section>
