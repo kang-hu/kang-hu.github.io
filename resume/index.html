@@ -1,1124 +1,112 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
-  width: 45em;
-  border: 1px solid #ddd;
-  outline: 1300px solid #fff;
-  margin: 16px auto;
-}
-
-body .markdown-body
-{
-  padding: 30px;
-}
-
-@font-face {
-  font-family: fontawesome-mini;
-  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
-}
-
-@font-face {
-  font-family: octicons-anchor;
-  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
-}
-
-.markdown-body {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  color: #333333;
-  overflow: hidden;
-  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  word-wrap: break-word;
-}
-
-.markdown-body a {
-  background: transparent;
-}
-
-.markdown-body a:active,
-.markdown-body a:hover {
-  outline: 0;
-}
-
-.markdown-body b,
-.markdown-body strong {
-  font-weight: bold;
-}
-
-.markdown-body mark {
-  background: #ff0;
-  color: #000;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.markdown-body sub,
-.markdown-body sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-.markdown-body sup {
-  top: -0.5em;
-}
-.markdown-body sub {
-  bottom: -0.25em;
-}
-
-.markdown-body h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-.markdown-body img {
-  border: 0;
-}
-
-.markdown-body hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-.markdown-body pre {
-  overflow: auto;
-}
-
-.markdown-body code,
-.markdown-body kbd,
-.markdown-body pre,
-.markdown-body samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-.markdown-body input {
-  color: inherit;
-  font: inherit;
-  margin: 0;
-}
-
-.markdown-body html input[disabled] {
-  cursor: default;
-}
-
-.markdown-body input {
-  line-height: normal;
-}
-
-.markdown-body input[type="checkbox"] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-.markdown-body table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-.markdown-body td,
-.markdown-body th {
-  padding: 0;
-}
-
-.markdown-body .codehilitetable {
-  border: 0;
-  border-spacing: 0;
-}
-
-.markdown-body .codehilitetable tr {
-  border: 0;
-}
-
-.markdown-body .codehilitetable pre,
-.markdown-body .codehilitetable div.codehilite {
-  margin: 0;
-}
-
-.markdown-body .linenos,
-.markdown-body .code,
-.markdown-body .codehilitetable td {
-  border: 0;
-  padding: 0;
-}
-
-.markdown-body td:not(.linenos) .linenodiv {
-  padding: 0 !important;
-}
-
-.markdown-body .code {
-  width: 100%;
-}
-
-.markdown-body .linenos div pre,
-.markdown-body .linenodiv pre,
-.markdown-body .linenodiv {
-  border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-border-top-left-radius: 3px;
-  -webkit-border-bottom-left-radius: 3px;
-  -moz-border-radius-topleft: 3px;
-  -moz-border-radius-bottomleft: 3px;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-
-.markdown-body .code div pre,
-.markdown-body .code div {
-  border: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-border-top-right-radius: 3px;
-  -webkit-border-bottom-right-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -moz-border-radius-bottomright: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.markdown-body * {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.markdown-body input {
-  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.4;
-}
-
-.markdown-body a {
-  color: #4183c4;
-  text-decoration: none;
-}
-
-.markdown-body a:hover,
-.markdown-body a:focus,
-.markdown-body a:active {
-  text-decoration: underline;
-}
-
-.markdown-body hr {
-  height: 0;
-  margin: 15px 0;
-  overflow: hidden;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid #ddd;
-}
-
-.markdown-body hr:before,
-.markdown-body hr:after {
-  display: table;
-  content: " ";
-}
-
-.markdown-body hr:after {
-  clear: both;
-}
-
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  line-height: 1.1;
-}
-
-.markdown-body h1 {
-  font-size: 30px;
-}
-
-.markdown-body h2 {
-  font-size: 21px;
-}
-
-.markdown-body h3 {
-  font-size: 16px;
-}
-
-.markdown-body h4 {
-  font-size: 14px;
-}
-
-.markdown-body h5 {
-  font-size: 12px;
-}
-
-.markdown-body h6 {
-  font-size: 11px;
-}
-
-.markdown-body blockquote {
-  margin: 0;
-}
-
-.markdown-body ul,
-.markdown-body ol {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markdown-body ol ol,
-.markdown-body ul ol {
-  list-style-type: lower-roman;
-}
-
-.markdown-body ul ul ol,
-.markdown-body ul ol ol,
-.markdown-body ol ul ol,
-.markdown-body ol ol ol {
-  list-style-type: lower-alpha;
-}
-
-.markdown-body dd {
-  margin-left: 0;
-}
-
-.markdown-body code,
-.markdown-body pre,
-.markdown-body samp {
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 12px;
-}
-
-.markdown-body pre {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markdown-body kbd {
-  background-color: #e7e7e7;
-  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
-  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
-  background-image: linear-gradient(#fefefe, #e7e7e7);
-  background-repeat: repeat-x;
-  border-radius: 2px;
-  border: 1px solid #cfcfcf;
-  color: #000;
-  padding: 3px 5px;
-  line-height: 10px;
-  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  display: inline-block;
-}
-
-.markdown-body>*:first-child {
-  margin-top: 0 !important;
-}
-
-.markdown-body>*:last-child {
-  margin-bottom: 0 !important;
-}
-
-.markdown-body .headeranchor-link {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-  padding-right: 6px;
-  padding-left: 30px;
-  margin-left: -30px;
-}
-
-.markdown-body .headeranchor-link:focus {
-  outline: none;
-}
-
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
-  position: relative;
-  margin-top: 1em;
-  margin-bottom: 16px;
-  font-weight: bold;
-  line-height: 1.4;
-}
-
-.markdown-body h1 .headeranchor,
-.markdown-body h2 .headeranchor,
-.markdown-body h3 .headeranchor,
-.markdown-body h4 .headeranchor,
-.markdown-body h5 .headeranchor,
-.markdown-body h6 .headeranchor {
-  display: none;
-  color: #000;
-  vertical-align: middle;
-}
-
-.markdown-body h1:hover .headeranchor-link,
-.markdown-body h2:hover .headeranchor-link,
-.markdown-body h3:hover .headeranchor-link,
-.markdown-body h4:hover .headeranchor-link,
-.markdown-body h5:hover .headeranchor-link,
-.markdown-body h6:hover .headeranchor-link {
-  height: 1em;
-  padding-left: 8px;
-  margin-left: -30px;
-  line-height: 1;
-  text-decoration: none;
-}
-
-.markdown-body h1:hover .headeranchor-link .headeranchor,
-.markdown-body h2:hover .headeranchor-link .headeranchor,
-.markdown-body h3:hover .headeranchor-link .headeranchor,
-.markdown-body h4:hover .headeranchor-link .headeranchor,
-.markdown-body h5:hover .headeranchor-link .headeranchor,
-.markdown-body h6:hover .headeranchor-link .headeranchor {
-  display: inline-block;
-}
-
-.markdown-body h1 {
-  padding-bottom: 0.3em;
-  font-size: 2.25em;
-  line-height: 1.2;
-  border-bottom: 1px solid #eee;
-}
-
-.markdown-body h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.75em;
-  line-height: 1.225;
-  border-bottom: 1px solid #eee;
-}
-
-.markdown-body h3 {
-  font-size: 1.5em;
-  line-height: 1.43;
-}
-
-.markdown-body h4 {
-  font-size: 1.25em;
-}
-
-.markdown-body h5 {
-  font-size: 1em;
-}
-
-.markdown-body h6 {
-  font-size: 1em;
-  color: #777;
-}
-
-.markdown-body p,
-.markdown-body blockquote,
-.markdown-body ul,
-.markdown-body ol,
-.markdown-body dl,
-.markdown-body table,
-.markdown-body pre,
-.markdown-body .admonition {
-  margin-top: 0;
-  margin-bottom: 16px;
-}
-
-.markdown-body hr {
-  height: 4px;
-  padding: 0;
-  margin: 16px 0;
-  background-color: #e7e7e7;
-  border: 0 none;
-}
-
-.markdown-body ul,
-.markdown-body ol {
-  padding-left: 2em;
-}
-
-.markdown-body ul ul,
-.markdown-body ul ol,
-.markdown-body ol ol,
-.markdown-body ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.markdown-body li>p {
-  margin-top: 16px;
-}
-
-.markdown-body dl {
-  padding: 0;
-}
-
-.markdown-body dl dt {
-  padding: 0;
-  margin-top: 16px;
-  font-size: 1em;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.markdown-body dl dd {
-  padding: 0 16px;
-  margin-bottom: 16px;
-}
-
-.markdown-body blockquote {
-  padding: 0 15px;
-  color: #777;
-  border-left: 4px solid #ddd;
-}
-
-.markdown-body blockquote>:first-child {
-  margin-top: 0;
-}
-
-.markdown-body blockquote>:last-child {
-  margin-bottom: 0;
-}
-
-.markdown-body table {
-  display: block;
-  width: 100%;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
-}
-
-.markdown-body table th {
-  font-weight: bold;
-}
-
-.markdown-body table th,
-.markdown-body table td {
-  padding: 6px 13px;
-  border: 1px solid #ddd;
-}
-
-.markdown-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-}
-
-.markdown-body table tr:nth-child(2n) {
-  background-color: #f8f8f8;
-}
-
-.markdown-body img {
-  max-width: 100%;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.markdown-body code,
-.markdown-body samp {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(0,0,0,0.04);
-  border-radius: 3px;
-}
-
-.markdown-body code:before,
-.markdown-body code:after {
-  letter-spacing: -0.2em;
-  content: "\00a0";
-}
-
-.markdown-body pre>code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
-}
-
-.markdown-body .codehilite {
-  margin-bottom: 16px;
-}
-
-.markdown-body .codehilite pre,
-.markdown-body pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f7f7f7;
-  border-radius: 3px;
-}
-
-.markdown-body .codehilite pre {
-  margin-bottom: 0;
-  word-break: normal;
-}
-
-.markdown-body pre {
-  word-wrap: normal;
-}
-
-.markdown-body pre code {
-  display: inline;
-  max-width: initial;
-  padding: 0;
-  margin: 0;
-  overflow: initial;
-  line-height: inherit;
-  word-wrap: normal;
-  background-color: transparent;
-  border: 0;
-}
-
-.markdown-body pre code:before,
-.markdown-body pre code:after {
-  content: normal;
-}
-
-/* Admonition */
-.markdown-body .admonition {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  position: relative;
-  border-radius: 3px;
-  border: 1px solid #e0e0e0;
-  border-left: 6px solid #333;
-  padding: 10px 10px 10px 30px;
-}
-
-.markdown-body .admonition table {
-  color: #333;
-}
-
-.markdown-body .admonition p {
-  padding: 0;
-}
-
-.markdown-body .admonition-title {
-  font-weight: bold;
-  margin: 0;
-}
-
-.markdown-body .admonition>.admonition-title {
-  color: #333;
-}
-
-.markdown-body .attention>.admonition-title {
-  color: #a6d796;
-}
-
-.markdown-body .caution>.admonition-title {
-  color: #d7a796;
-}
-
-.markdown-body .hint>.admonition-title {
-  color: #96c6d7;
-}
-
-.markdown-body .danger>.admonition-title {
-  color: #c25f77;
-}
-
-.markdown-body .question>.admonition-title {
-  color: #96a6d7;
-}
-
-.markdown-body .note>.admonition-title {
-  color: #d7c896;
-}
-
-.markdown-body .admonition:before,
-.markdown-body .attention:before,
-.markdown-body .caution:before,
-.markdown-body .hint:before,
-.markdown-body .danger:before,
-.markdown-body .question:before,
-.markdown-body .note:before {
-  font: normal normal 16px fontawesome-mini;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  line-height: 1.5;
-  color: #333;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
-.markdown-body .admonition:before {
-  content: "\f056\00a0";
-  color: 333;
-}
-
-.markdown-body .attention:before {
-  content: "\f058\00a0";
-  color: #a6d796;
-}
-
-.markdown-body .caution:before {
-  content: "\f06a\00a0";
-  color: #d7a796;
-}
-
-.markdown-body .hint:before {
-  content: "\f05a\00a0";
-  color: #96c6d7;
-}
-
-.markdown-body .danger:before {
-  content: "\f057\00a0";
-  color: #c25f77;
-}
-
-.markdown-body .question:before {
-  content: "\f059\00a0";
-  color: #96a6d7;
-}
-
-.markdown-body .note:before {
-  content: "\f040\00a0";
-  color: #d7c896;
-}
-
-.markdown-body .admonition::after {
-  content: normal;
-}
-
-.markdown-body .attention {
-  border-left: 6px solid #a6d796;
-}
-
-.markdown-body .caution {
-  border-left: 6px solid #d7a796;
-}
-
-.markdown-body .hint {
-  border-left: 6px solid #96c6d7;
-}
-
-.markdown-body .danger {
-  border-left: 6px solid #c25f77;
-}
-
-.markdown-body .question {
-  border-left: 6px solid #96a6d7;
-}
-
-.markdown-body .note {
-  border-left: 6px solid #d7c896;
-}
-
-.markdown-body .admonition>*:first-child {
-  margin-top: 0 !important;
-}
-
-.markdown-body .admonition>*:last-child {
-  margin-bottom: 0 !important;
-}
-
-/* progress bar*/
-.markdown-body .progress {
-  display: block;
-  width: 300px;
-  margin: 10px 0;
-  height: 24px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #ededed;
-  position: relative;
-  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
-}
-
-.markdown-body .progress-label {
-  position: absolute;
-  text-align: center;
-  font-weight: bold;
-  width: 100%; margin: 0;
-  line-height: 24px;
-  color: #333;
-  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
-  -webkit-font-smoothing: antialiased !important;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.markdown-body .progress-bar {
-  height: 24px;
-  float: left;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #96c6d7;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
-  background-size: 30px 30px;
-  background-image: -webkit-linear-gradient(
-    135deg, rgba(255, 255, 255, .4) 27%,
-    transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%,
-    transparent 77%, transparent
-  );
-  background-image: -moz-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: -ms-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: -o-linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-  background-image: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, .4) 27%, transparent 27%,
-    transparent 52%, rgba(255, 255, 255, .4) 52%,
-    rgba(255, 255, 255, .4) 77%, transparent 77%,
-    transparent
-  );
-}
-
-.markdown-body .progress-100plus .progress-bar {
-  background-color: #a6d796;
-}
-
-.markdown-body .progress-80plus .progress-bar {
-  background-color: #c6d796;
-}
-
-.markdown-body .progress-60plus .progress-bar {
-  background-color: #d7c896;
-}
-
-.markdown-body .progress-40plus .progress-bar {
-  background-color: #d7a796;
-}
-
-.markdown-body .progress-20plus .progress-bar {
-  background-color: #d796a6;
-}
-
-.markdown-body .progress-0plus .progress-bar {
-  background-color: #c25f77;
-}
-
-.markdown-body .candystripe-animate .progress-bar{
-  -webkit-animation: animate-stripes 3s linear infinite;
-  -moz-animation: animate-stripes 3s linear infinite;
-  animation: animate-stripes 3s linear infinite;
-}
-
-@-webkit-keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-@-moz-keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-@keyframes animate-stripes {
-  0% {
-    background-position: 0 0;
-  }
-
-  100% {
-    background-position: 60px 0;
-  }
-}
-
-.markdown-body .gloss .progress-bar {
-  box-shadow:
-    inset 0 4px 12px rgba(255, 255, 255, .7),
-    inset 0 -12px 0 rgba(0, 0, 0, .05);
-}
-
-/* Multimarkdown Critic Blocks */
-.markdown-body .critic_mark {
-  background: #ff0;
-}
-
-.markdown-body .critic_delete {
-  color: #c82829;
-  text-decoration: line-through;
-}
-
-.markdown-body .critic_insert {
-  color: #718c00 ;
-  text-decoration: underline;
-}
-
-.markdown-body .critic_comment {
-  color: #8e908c;
-  font-style: italic;
-}
-
-.markdown-body .headeranchor {
-  font: normal normal 16px octicons-anchor;
-  line-height: 1;
-  display: inline-block;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.headeranchor:before {
-  content: '\f05c';
-}
-
-.markdown-body .task-list-item {
-  list-style-type: none;
-}
-
-.markdown-body .task-list-item+.task-list-item {
-  margin-top: 3px;
-}
-
-.markdown-body .task-list-item input {
-  margin: 0 4px 0.25em -20px;
-  vertical-align: middle;
-}
-
-/* Media */
-@media only screen and (min-width: 480px) {
-  .markdown-body {
-    font-size:14px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .markdown-body {
-    font-size:16px;
-  }
-}
-
-@media print {
-  .markdown-body * {
-    background: transparent !important;
-    color: black !important;
-    filter:none !important;
-    -ms-filter: none !important;
-  }
-
-  .markdown-body {
-    font-size:12pt;
-    max-width:100%;
-    outline:none;
-    border: 0;
-  }
-
-  .markdown-body a,
-  .markdown-body a:visited {
-    text-decoration: underline;
-  }
-
-  .markdown-body .headeranchor-link {
-    display: none;
-  }
-
-  .markdown-body a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  .markdown-body abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  .markdown-body .ir a:after,
-  .markdown-body a[href^="javascript:"]:after,
-  .markdown-body a[href^="#"]:after {
-    content: "";
-  }
-
-  .markdown-body pre {
-    white-space: pre;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-  }
-
-  .markdown-body pre,
-  .markdown-body blockquote {
-    border: 1px solid #999;
-    padding-right: 1em;
-    page-break-inside: avoid;
-  }
-
-  .markdown-body .progress,
-  .markdown-body .progress-bar {
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-
-  .markdown-body .progress {
-    border: 1px solid #ddd;
-  }
-
-  .markdown-body .progress-bar {
-    height: 22px;
-    border-right: 1px solid #ddd;
-  }
-
-  .markdown-body tr,
-  .markdown-body img {
-    page-break-inside: avoid;
-  }
-
-  .markdown-body img {
-    max-width: 100% !important;
-  }
-
-  .markdown-body p,
-  .markdown-body h2,
-  .markdown-body h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  .markdown-body h2,
-  .markdown-body h3 {
-    page-break-after: avoid;
-  }
-}
-
-  .clearfix {
-    zoom: 1; }
-
-  .clearfix:after {
-    content: '.';
-    display: block;
-    clear: both;
-    visibility: hidden;
-    height: 0;
-    font-size: 0; }
-</style>
-
-<title>胡康－履歷</title>
-<meta name="description" content="您好!我是前端工程師胡康">
-<meta itemprop="name" content="胡康－履歷">
-<meta itemprop="description" content="您好!我是前端工程師胡康">
-</head><body><article class="markdown-body"><pre><code>您好!我是胡康
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><pre><code>您好!我是胡康
 謝謝您審閱我的履歷，相信我之前的經驗，在貴公司會有所貢獻
 以下是我的基本資料及經歷，還請不吝指教。
 </code></pre>
-<h2 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>基本資訊</h2>
-<div class="clearfix">
-  <p style="float:right"><img alt="" src="images/author.jpg" /></p>
-  <ul>
-  <li>姓名：胡仲康</li>
-  <li>性別：男</li>
-  <li>生日：1989 10</li>
-  <li>語言：中文 英文(TOEIC 720分 2011)</li>
-  <li>興趣休閒：攝影、旅遊、閱讀<br />
-  <a href="https://www.flickr.com/photos/kanghu/">flickr</a><br />
-  <a href="https://travel98.com/member/6300">旅遊雜記</a></li>
-  </ul>  
-</div>
-<h2 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>特質概述</h2>
+<h2 id="基本資訊">基本資訊</h2>
+<p><img src="https://kang-hu.github.io/images/author.jpg" alt="N|Solid"></p>
+<ul>
+<li>姓名：胡仲康</li>
+<li>性別：男</li>
+<li>生日：1989 10</li>
+<li>語言：中文 英文(TOEIC 720分 2011)</li>
+<li>興趣休閒：攝影、旅遊、閱讀<br>
+<a href="https://www.flickr.com/photos/kanghu/">flickr</a><br>
+<a href="https://travel98.com/member/6300">旅遊雜記</a></li>
+</ul>
+<h2 id="特質概述">特質概述</h2>
 <ul>
 <li>對圖像敏銳並能結合邏輯思考</li>
 <li>溝通良好(工作上具有不少與後端、前端、設計、企劃的經驗)</li>
 <li>喜歡前端UI介面設計，以優雅體驗和彈性、具規則、易於整合為中心思維開發分析</li>
 <li>吸收多資訊為能得到更多解決事情的辦法，但喜歡在同類型事物上擇一進行深度熟悉。</li>
 </ul>
-<h2 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>技術相關</h2>
+<h2 id="技術相關">技術相關</h2>
 <ul>
-<li>HTML,JADE*</li>
-<li>CSS,SCSS*</li>
+<li>HTML,PUG</li>
+<li>CSS,SCSS</li>
+<li>javascript, JQuery, Vue</li>
 <li>svg canvas</li>
-<li>javascript, JQuery, Angularjs, Vuejs*</li>
 <li>git</li>
 <li>gulp</li>
-<li>C# ASP.NET MVC3,4</li>
-<li>php(wordpress)</li>
-<li>seo basic rule</li>
 <li>photoshop</li>
-<li>第三方api串接 <ul>
+<li>seo basic rule</li>
+<li>C# <a href="http://ASP.NET">ASP.NET</a> MVC3,4</li>
+<li>php(wordpress)</li>
+<li>第三方api串接
+<ul>
 <li>Google Analytics</li>
 <li>facebook api (login Graph feed)</li>
-<li>youtube api </li>
+<li>youtube api</li>
 </ul>
 </li>
 </ul>
-<h2 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>個人經歷</h2>
+<h2 id="個人經歷">個人經歷</h2>
 <ul>
-<li>元智大學 資訊管理學系(97~101) 畢業</li>
-<li>101-1考選預備士官 役畢</li>
-<li>頗意多實業社 (企劃、網頁工程師) 2013／08 ～ 2014／11</li>
 <li>
-<p>春樹科技 (前端工程師、資深前端工程師) 2015／01 ～ 今</p>
+<p>春樹科技 (前端工程師、資深前端工程師、代理主管)  2015／01 ～ 2018/02</p>
+</li>
+<li>
+<p>元智大學 資訊管理學系(97~101) 畢業</p>
+</li>
+<li>
+<p>101-1考選預備士官 役畢</p>
+</li>
+<li>
+<p>頗意多實業社 (企劃、網頁工程師) 2013／08 ～ 2014／11</p>
 <p>參與公司實績：</p>
 <ul>
 <li><a href="http://edm1.brain.com.tw/agencyad/agency16.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=20161128&amp;">2016動腦雜誌 年度傑出廣告實效獎 銅獎</a> <a href="https://www.asus.com/tw/event/photopk/">ASUS 美景大對決</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="_5"><a name="user-content-_5" href="#_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>履歷附件</h2>
-<h3 id="_6"><a name="user-content-_6" href="#_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>自傳</h3>
-<p>選擇前端工程師為職業和個性喜歡平衡有絕大的關係，在大學時資管系教與我程式設計、資料庫與行銷管理相關知識，學習的第一個程式語言為JAVA。課外接觸了攝影，透過觀景窗重新認識了世界和抒發自我的心境並開始接觸photoshop。退伍後，進入頗意多實業社擔任企劃與工程師一職，企劃業務內容為規劃網頁內容與行銷整合提案，工程師部分為html css撰寫的部分。後來開始學習RWD響應式網頁，在文偉說教育機構學到WORDPRESS架設並受邀參與桌遊愛樂事、雲喧弄茶等專案。在此時對於各方面算是有了一番粗淺的了解後，開始選擇在前端耕耘。</p>
-<p>幸運地進入春樹科技在專案經理施文皓及資深前端羅欣宜指導下學習網頁技術，一開始負責切版的部分，使用prepros工具編譯SCSS並以固定VIEWPORT的方式進行開發行銷專案。在切版時精進對css特性的熟練度如box-model、z-index rule、positioned and non positioned&hellip;對SEO如META、schema.org、anchor link&hellip;以及對命名規則的研究如rscss、SMACSS、BEM&hellip;等等，其後在導師的指導下整理出依據7-1pattern以及sticky footer layout的開發工具包。</p>
-<p>熟練切版後，轉將心力放在Javascript上，從互動操作應用來著手，學習了GSAP這套補間運算的js框架工具，GSAP最重要是有時間軸以及有許多接口方便流程控制，例如一個俄羅斯輪盤轉動，可以在進行ajax取得獎品後進行設定獎品結果再動畫撥放，播放後透過onComplete function啟動確認視窗。先後我們部門開始使用框架加速開發，前期為使用angular 1.x進行，現使用vue2.0進行開發。當前服務範圍，尚有asp.net mvc的整合前端程式串接，以及azure雲端伺服器的布版操作。製造外也有新人指導和技術研究的業務。</p>
-<p>對自己的期待是了解的廣，找到解決問題的方法，在有興趣的方面深耕，發揮自身的價值。</p>
-<h3 id="_7"><a name="user-content-_7" href="#_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>作品列表</h3>
-<p>列出專案及簡述負責部分<br />
+<h2 id="履歷附件">履歷附件</h2>
+<p>###自傳</p>
+<p>選擇前端工程師為職業和個性喜歡平衡有絕大的關係，在大學時資管系教與我程式設計、資料庫與行銷管理相關知識，學習的第一個程式語言為JAVA。課外接觸了攝影，透過觀景窗重新認識了世界和抒發自我的心境並開始接觸photoshop。退伍後，進入頗意多實業社擔任企劃與工程師一職，企劃業務內容為規劃網頁內容與行銷整合提案，工程師部分為html css撰寫的部分。後來開始學習RWD響應式網頁，在文偉說教育機構學到WORDPRESS架設並受邀參與桌遊愛樂事、雲喧弄茶等專案。在此時對於各方面算是有了一番粗淺的了解後，確定選擇在前端耕耘。</p>
+<p>幸運地於RWD蓬勃發展時，進入春樹科技在部門主管施文皓及資深前端羅欣宜指導下學習網頁技術，一開始負責切版的部分，初期使用prepros工具，後改用GULP完成處理版面製作時所需的自動環境。在切版時精進對css特性的熟練度如box-model、z-index rule、positioned and non positioned…對SEO如META、<a href="http://schema.org">schema.org</a>、anchor link…以及對命名規則的學習如rscss、SMACSS、BEM…等等，其後在導師的指導下整理出依據7-1pattern以及sticky footer layout的開發工具包，後來轉為使用GULP完成預編譯及啟動local端liveReload版面…等等工作，加速版面製作的時程。</p>
+<p>熟練切版之後，在短時程的行銷專案能學習擔任更多腳色，有更多心力放在JS的部分，從互動操作應用來著手，舉例GSAP這套動畫補間運算的js框架工具，GSAP有時間軸以及有許多接口方便流程控制，例如一個俄羅斯輪盤，在進行ajax取得資料時播放旋轉動畫，取得後進行判斷並停在對應的獎品畫面上後透過onComplete function啟動確認視窗。實例之一，在家樂福BRICS案中提前配合製作提案RWD主視覺操作prototype layout，降低溝通成本以及視覺稿的誤差。</p>
+<p>除了上述前端互動外，也能擔任流程開發串接的腳色。現今主流前端框架部分，部門前期使用angular 1.x進行，後選用vue2進行開發。除前端經驗外也有參與 asp MVC中扮演view層開發的腳色，以及azure雲端伺服器的操作協助。開發外有新人指導和技術研究的業務，曾經在導生制度下學習的我，喜歡互相分享的氣氛，被提升為資深工程師後，一樣致力於提升彼此產能，讓彼此能有餘力挑戰不熟悉的項目同時兼顧應做的部分，短暫成為代理主管的時間中，使用trello進行任務安排致力讓部門能持續穩定完成專案。</p>
+<p>春樹期間，歷經幾個腳色變換讓我能有不同的視野，謙卑地接受指教持續精進自己，在未來負責的職位有所貢獻。</p>
+<p>在此感謝您對我個人經歷的閱覽。</p>
+<p>###作品列表</p>
+<p>列出專案及簡述負責部分<br>
 可透過 <a href="http://www.friendo.com.tw/brands">http://www.friendo.com.tw/brands</a> 查閱，部分已下線</p>
 <p>近期:</p>
 <ul>
-<li><a href="http://carrefour.friendo.com.tw/brics">家樂福BRIC&rsquo;S</a><br />
-    UI TEMPLATE 建立與設計前提出主導、流程控制串接、前端指導&hellip;</li>
-<li><a href="https://ibank.skbank.com.tw/SKB_DF/Event2017Q2">新光銀行－星光大道</a><br />
-    切版動畫、前端流程範例建立</li>
-<li><a href="http://site.friendo.com.tw/taishinatm2017">台新銀行－2017atm垮行存</a><br />
-    流程控制串接、前端指導</li>
-<li><a href="http://www.yuantafutures.com.tw/2017trading/">元大期貨－智能大未來</a><br />
-    專案前動畫survey、流程控制串接、前端指導</li>
-<li><a href="http://site.friendo.com.tw/firstbankcard">第一銀行－信用卡</a><br />
-    切版動畫、套板前串接流程</li>
-<li><a href="http://www.yuantafutures.com.tw/goldenrooster/index.aspx">元大期貨－財神金雞利</a><br />
-    切版動畫</li>
-<li><a href="http://www1.jihsun.com.tw/futures/king-of-futures/index.aspx">日盛期貨－誰敢來戰</a><br />
-    切版動畫</li>
-<li>玉山銀行－天貓雙十一<br />
-    切版動畫</li>
-<li><a href="http://sit-ctbcgcc.azurewebsites.net/ctbc-gcc">中國信託－四航卡</a><br />
-    切版動畫、前端控制</li>
+<li><a href="https://kang-hu.github.io/playImage/index.html">上傳圖片加手勢判斷demo</a></li>
+<li><a href="https://carrefour.friendo.com.tw/2018_Loyalty_event">家樂福滴血認親</a><br>
+JS流程、動畫協助</li>
+<li><a href="https://site.friendo.com.tw/png2017/index">P&amp;G新年賀卡</a><br>
+專案管理、CANVAS及手勢操作結合、切版</li>
+<li><a href="http://carrefour.friendo.com.tw/brics">家樂福BRIC’S</a><br>
+UI TEMPLATE 建立與設計前提出主導、流程控制串接、前端指導…</li>
+<li><a href="https://ibank.skbank.com.tw/SKB_DF/Event2017Q2">新光銀行－星光大道</a><br>
+切版動畫、前端流程範例建立</li>
+<li><a href="http://site.friendo.com.tw/taishinatm2017">台新銀行－2017atm垮行存</a><br>
+流程控制串接、前端指導</li>
+<li><a href="http://www.yuantafutures.com.tw/2017trading/">元大期貨－智能大未來</a><br>
+專案前動畫survey、JS流程串接、前端指導</li>
+<li><a href="http://site.friendo.com.tw/firstbankcard">第一銀行－信用卡</a><br>
+切版動畫、套板前串接流程</li>
+<li><a href="http://www.yuantafutures.com.tw/goldenrooster/index.aspx">元大期貨－財神金雞利</a><br>
+切版動畫</li>
+<li><a href="http://www1.jihsun.com.tw/futures/king-of-futures/index.aspx">日盛期貨－誰敢來戰</a><br>
+切版動畫</li>
 </ul>
 <p>累積參與專案:</p>
 <ul>
+<li>[玉山銀行－天貓雙十一]</li>
+<li>[中國信託－四航卡]</li>
 <li>[中國信託－野餐拉吧]</li>
 <li>[元大期貨] 四檔兌換活動</li>
 <li>[國泰世華－koko duncan]</li>
@@ -1128,6 +116,10 @@ body .markdown-body
 <li>[晶碩－舒適警告]</li>
 <li>[威熊－釜山食境秀]</li>
 <li>[台新銀行]萬事支票、玫瑰刺語錄、告別排隊新生活</li>
-<li>[中國信託－酷碰估價王] </li>
-<li><a href="http://rankodo.com/">WORDPRESS架站 嵐香堂</a> </li>
-</ul></article></body></html>
+<li>[中國信託－酷碰估價王]</li>
+<li><a href="http://rankodo.com/">WORDPRESS架站 嵐香堂</a></li>
+</ul>
+</div>
+</body>
+
+</html>
