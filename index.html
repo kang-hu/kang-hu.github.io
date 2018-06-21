@@ -1,128 +1,517 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>ChungKangHu | 胡仲康</title>
+	<meta name="description" content="您好!我是胡康以下內容是關於我的介紹">
+	<meta itemprop="name" content="ChungKangHu | 胡仲康 － Front-end Developer">
+	<meta itemprop="description" content="您好!我是胡康以下內容是關於我的介紹">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+	
+	<style type="text/css">
+	@import url(
+	https://fonts.googleapis.com/css?family=Lato:400,700
+);
+body {
+	background: #fff;
+	font-family: Lato, sans-serif;
+	margin: 0 0 80px;
+	color: #4c4c4c;
+}
+a {
+	color: #58C9B9;
+}
+a:focus,
+a:hover {
+	color: #9DC8C8;
+	text-decoration: none;
+}
+p {
+	line-height: 1.5;
+	margin: 0;
+}
+p + p {
+	margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4 {
+	margin-top: 0
+}
+section {
+	margin-top: 30px;
+}
+li {
+	line-height: 1.8;
+	list-style: none;
+}
+li:before {
+	content: "\f052";
+	float: left;
+	font: 13px Octicons;
+	margin-top: 6px;
+	margin-left: -20px;
+	opacity: .1;
+	position: absolute;
+}
+blockquote {
+	border-left: 5px solid #e7e9ec;
+	font-size: 14px;
+}
+em {
+	color: #95a5a6;
+	font-weight: normal;
+	font-style: normal;
+}
+h4 span:first-child {
+	color: #4c4c4c;
+	font-weight: bold;
+}
+.container {
+	max-width: 750px;
+	padding: 0 30px;
+}
+.col-sm-6 {
+	margin-bottom: 10px;
+}
+.col-sm-12 h4 {
+	margin-top: 12px; 
+}
+.col-sm-12 + .col-sm-12 {
+	margin-top: 30px;
+}
+#header {
+	background: #fff;
+	border-bottom: #eaeaea solid 1px;
+	padding: 30px 0;
+	margin-bottom: 0px;
+}
+#header h2 {
+	color: #95a5a6;
+	font-size: 24px;
+}
+#content h3 {
+	color: #4c4c4c;
+	font-size: 26px;
+	margin-top: -4px;
+}
+#content aside {
+	text-align: right;
+	padding-right: 30px;
+}
+#profiles .network {
+	text-transform: capitalize;
+}
+#work .position,
+#volunteer .position {
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+#education .area {
+	font-weight: bold;
+}
+#education .area:before {
+	content: "\f0d7";
+	font: 16px Octicons;
+	margin-right: 6px;
+}
+#education .studyType {
+	margin-left: 25px;
+}
+#awards .summary,
+#publications .summary {
+	margin-top: 8px;
+}
+#publications .website a:before {
+	content: attr(href);
+}
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>胡康－履歷</title>
-  <meta name="description" content="您好!我是前端工程師胡康">
-  <meta itemprop="name" content="胡康－履歷">
-  <meta itemprop="description" content="您好!我是前端工程師胡康">
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
+@media (min-width: 480px) {
+	.strike-through {
+		border-top: 1px solid #f4f6f6;
+		height: 20px;
+		margin-top: 12px;
+		margin-bottom: -2px;
+		position: relative;
+	}
+	.strike-through span,
+	.strike-through a {
+		background: #fff;
+		position: absolute;
+	}
+	.strike-through span:first-child {
+		padding-right: 20px;
+		margin-top: -12px;
+	}
+	.strike-through span + span {
+		font-size: 14px;
+		margin-top: -10px;
+		padding-left: 20px;
+		right: 0;
+	}
+}
+@media (max-width: 768px) {
+	.col-sm-6:last-child {
+		margin-bottom: 0px;
+	}
+	#content aside {
+		margin-bottom: 20px;
+		padding-right: 0;
+		text-align: left;
+	}
+	#publications .website a:before {
+		content: "View publication";
+	}
+}
+@media (max-width: 480px) {
+	h1 {
+		font-size: 26px;
+	}
+	.date {
+		font-size: 14px;
+		margin-bottom: 5px;
+	}
+	.strike-through span:first-child {
+		margin-bottom: 7px;
+	}
+	.strike-through span {
+		display: block;
+	}	
+	#header {
+		margin-bottom: 10px;
+		padding: 40px 0;
+	}
+	#actions {
+		display: none;
+	}
+}
 
-<body class="stackedit">
-  <div class="stackedit__html"><pre><code>您好!我是胡康
-謝謝您審閱我的履歷，相信我之前的經驗，在貴公司會有所貢獻
-以下是我的基本資料及經歷，還請不吝指教。
-</code></pre>
-<h2 id="基本資訊">基本資訊</h2>
-<p><img src="https://kang-hu.github.io/images/author.jpg" alt="N|Solid"></p>
-<ul>
-<li>姓名：胡仲康</li>
-<li>性別：男</li>
-<li>生日：1989 10</li>
-<li>語言：中文 英文(TOEIC 720分 2011)</li>
-<li>興趣休閒：攝影、旅遊、閱讀<br>
-<a href="https://www.flickr.com/photos/kanghu/">flickr</a><br>
-<a href="https://travel98.com/member/6300">旅遊雜記</a></li>
-</ul>
-<h2 id="特質概述">特質概述</h2>
-<ul>
-<li>對圖像敏銳並能結合邏輯思考</li>
-<li>溝通良好(工作上具有不少與後端、前端、設計、企劃的經驗)</li>
-<li>喜歡前端UI介面設計，以優雅體驗和彈性、具規則、易於整合為中心思維開發分析</li>
-<li>吸收多資訊為能得到更多解決事情的辦法，但喜歡在同類型事物上擇一進行深度熟悉。</li>
-</ul>
-<h2 id="技術相關">技術相關</h2>
-<ul>
-<li>HTML,PUG</li>
-<li>CSS,SCSS</li>
-<li>javascript, JQuery, Vue</li>
-<li>svg canvas</li>
-<li>git</li>
-<li>gulp</li>
-<li>photoshop</li>
-<li>seo basic rule</li>
-<li>C# <a href="http://ASP.NET">ASP.NET</a> MVC3,4</li>
-<li>php(wordpress)</li>
-<li>第三方api串接
-<ul>
-<li>Google Analytics</li>
-<li>facebook api (login Graph feed)</li>
-<li>youtube api</li>
-</ul>
-</li>
-</ul>
-<h2 id="個人學經歷">個人學經歷</h2>
-<ul>
-<li>
-<p>元智大學 資訊管理學系 畢業 2008 ～ 2012</p>
-</li>
-<li>
-<p>考選預備士官101-1梯 役畢</p>
-</li>
-<li>
-<p>頗意多實業社 (企劃、網頁工程師) 2013／08 ～ 2014／11</p>
-</li>
-<li>
-<p>春樹科技 (前端工程師、資深前端工程師、代理主管)  2015／01 ～ 2018/02</p>
-<p>參與公司實績：</p>
-<ul>
-<li><a href="http://edm1.brain.com.tw/agencyad/agency16.html?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=20161128&amp;">2016動腦雜誌 年度傑出廣告實效獎 銅獎</a> <a href="https://www.asus.com/tw/event/photopk/">ASUS 美景大對決</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="履歷附件">履歷附件</h2>
-<h3 id="自傳">自傳</h3>
-<p>選擇前端工程師為職業和個性喜歡平衡有絕大的關係，在大學時資管系教與我程式設計、資料庫與行銷管理相關知識，學習的第一個程式語言為JAVA。課外接觸了攝影，透過觀景窗重新認識了世界和抒發自我的心境並開始接觸photoshop。退伍後，進入頗意多實業社擔任企劃與工程師一職，企劃業務內容為規劃網頁內容與行銷整合提案，工程師部分為html css撰寫的部分。後來開始學習RWD響應式網頁，在文偉說教育機構學到WORDPRESS架設並受邀參與桌遊愛樂事、雲喧弄茶等專案。在此時對於各方面算是有了一番粗淺的了解後，確定選擇在前端耕耘。</p>
-<p>幸運地於RWD蓬勃發展時，進入春樹科技在部門主管施文皓及資深前端羅欣宜指導下學習網頁技術，一開始負責切版的部分，初期使用prepros工具，後改用GULP完成處理版面製作時所需的自動環境。在切版時精進對css特性的熟練度如box-model、z-index rule、positioned and non positioned…對SEO如META、<a href="http://schema.org">schema.org</a>、anchor link…以及對命名規則的學習如rscss、SMACSS、BEM…等等，其後在導師的指導下整理出依據7-1pattern以及sticky footer layout的開發工具包，後來轉為使用GULP完成預編譯及啟動local端liveReload版面…等等工作，加速版面製作的時程。</p>
-<p>熟練切版之後，在短時程的行銷專案能學習擔任更多腳色，有更多心力放在JS的部分，從互動操作應用來著手，舉例GSAP這套動畫補間運算的js框架工具，GSAP有時間軸以及有許多接口方便流程控制，例如一個俄羅斯輪盤，在進行ajax取得資料時播放旋轉動畫，取得後進行判斷並停在對應的獎品畫面上後透過onComplete function啟動確認視窗。實例之一，在家樂福BRICS案中提前配合製作提案RWD主視覺操作prototype layout，降低溝通成本以及視覺稿的誤差。</p>
-<p>除了上述前端互動外，也能擔任流程開發串接的腳色。現今主流前端框架部分，部門前期使用angular 1.x進行，後選用vue2進行開發。除前端經驗外也有參與 asp MVC中扮演view層開發的腳色，以及azure雲端伺服器的操作協助。開發外有新人指導和技術研究的業務，曾經在導生制度下學習的我，喜歡互相分享的氣氛，被提升為資深工程師後，一樣致力於提升彼此產能，讓彼此能有餘力挑戰不熟悉的項目同時兼顧應做的部分，短暫成為代理主管的時間中，使用trello進行任務安排致力讓部門能持續穩定完成專案。</p>
-<p>春樹期間，歷經幾個腳色變換讓我能有不同的視野，謙卑地接受指教持續精進自己，在未來負責的職位有所貢獻。</p>
-<p>在此感謝您對我個人經歷的閱覽。</p>
-<h3 id="作品列表">作品列表</h3>
-<p>列出專案及簡述負責部分<br>
-可透過 <a href="http://www.friendo.com.tw/brands">http://www.friendo.com.tw/brands</a> 查閱，部分已下線</p>
-<p>近期:</p>
-<ul>
-<li><a href="https://kang-hu.github.io/playImage/index.html">上傳圖片加手勢判斷demo</a></li>
-<li><a href="https://carrefour.friendo.com.tw/2018_Loyalty_event">家樂福滴血認親</a><br>
-JS流程、動畫協助</li>
-<li><a href="https://site.friendo.com.tw/png2017/index">P&amp;G新年賀卡</a><br>
-專案管理、CANVAS及手勢操作結合、切版</li>
-<li><a href="http://carrefour.friendo.com.tw/brics">家樂福BRIC’S</a><br>
-UI TEMPLATE 建立與設計前提出主導、流程控制串接、前端指導…</li>
-<li><a href="https://ibank.skbank.com.tw/SKB_DF/Event2017Q2">新光銀行－星光大道</a><br>
-切版動畫、前端流程範例建立</li>
-<li><a href="http://site.friendo.com.tw/taishinatm2017">台新銀行－2017atm垮行存</a><br>
-流程控制串接、前端指導</li>
-<li><a href="http://www.yuantafutures.com.tw/2017trading/">元大期貨－智能大未來</a><br>
-專案前動畫survey、JS流程串接、前端指導</li>
-<li><a href="http://site.friendo.com.tw/firstbankcard">第一銀行－信用卡</a><br>
-切版動畫、套板前串接流程</li>
-<li><a href="http://www.yuantafutures.com.tw/goldenrooster/index.aspx">元大期貨－財神金雞利</a><br>
-切版動畫</li>
-<li><a href="http://www1.jihsun.com.tw/futures/king-of-futures/index.aspx">日盛期貨－誰敢來戰</a><br>
-切版動畫</li>
-</ul>
-<p>累積參與專案:</p>
-<ul>
-<li>[玉山銀行－天貓雙十一]</li>
-<li>[中國信託－四航卡]</li>
-<li>[中國信託－野餐拉吧]</li>
-<li>[元大期貨] 四檔兌換活動</li>
-<li>[國泰世華－koko duncan]</li>
-<li>[ASUS－美景大對決]</li>
-<li>[妙潔－幸福尋寶家]</li>
-<li>[芝司樂－早餐奧斯卡]</li>
-<li>[晶碩－舒適警告]</li>
-<li>[威熊－釜山食境秀]</li>
-<li>[台新銀行]萬事支票、玫瑰刺語錄、告別排隊新生活</li>
-<li>[中國信託－酷碰估價王]</li>
-<li><a href="http://rankodo.com/">WORDPRESS架站 嵐香堂</a></li>
-</ul>
-</div>
-</body>
+	.avatar {
+		width: 100%;
+		max-width: 120px;
+		border-radius: 100%;
+		border: #eaeaea solid 1px;
+	}
 
+	.wrapAvatar {
+		text-align: right;
+	}
+
+	@media (max-width: 768px) {
+		#header {
+			text-align: center;
+		}
+		#header .avatar {
+			margin: 0 0 20px 0;
+		}
+		.wrapAvatar {
+			text-align: center;
+		}
+	}
+
+	</style>
+	
+	</head>
+	<body>
+	
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 wrapAvatar">
+					<img class="avatar" src="https://kang-hu.github.io/images/avatar1.jpg" alt="">
+				</div>
+				<div class="col-sm-9">
+					<h1>
+						ChungKang Hu 胡仲康
+					</h1>
+					<h2>
+						Front-end Developer
+					</h2>
+
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="username">
+								<strong class="network">Status：</strong>Single
+							</div>
+							<div class="username">
+								<strong class="network">Nationality：</strong>Taiwanese
+							</div>
+							<div class="username">
+								<strong class="network">Resides：</strong>New Taipei city
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="email"><strong>Email：</strong> s971611@gmail.com</div>
+							<div class="phone"><strong>Phone：</strong> (+886) 912-450-189</div>
+							<div class="username">
+								<div class="url">
+									<strong class="network">Github page：</strong>
+									<a href="https://kang-hu.github.io/" target="_blank">
+										link
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content" class="container">
+
+	<section id="about" class="row">
+		<aside class="col-sm-3">
+			<h3>關於</h3>
+		</aside>
+		<div class="col-sm-9">
+			<p>於專案中獨立負責前端工作，具備跨部門溝通實踐經驗。
+				能實現設計稿至RWD樣板具優雅降級、漸進增強概念，有能力規劃版面結構。
+				使用框架及函式庫完成任務流程、動畫操作、資料串接達成專案。
+				曾指導資淺工程師協助其安排學習項目並樂於分享自身經驗。
+				有代理部門主管經驗，能確實安排時程人力完成專案上線。
+				<br>
+				熱愛生活喜愛從各種體驗帶來的感受，擁有追求美好的熱情，對工作負責。
+			</p>
+		</div>
+	</section>
+
+	<section id="skills" class="row">
+		<aside class="col-sm-3">
+			<h3>技能</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>網頁開發</h4>
+				</div>
+				<ul class="keywords">
+					<li>CSS/CSS3/SCSS/Sass</li>
+					<li>Javascript/JQuery/Vue.js/GSAP</li>
+					<li>html/html5/Pug/Canvas</li>
+					<li>GIT</li>
+					<li>Gulp</li>
+					<li>C# Asp.net MVC</li>
+					<li>Wordpress</li>
+					<li>Third party API：GA、Youtube、FB</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>工具</h4>
+				</div>
+				<ul class="keywords">
+					<li>Photoshop</li>
+					<li>Visual studio code</li>
+					<li>Sourcetree</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="row">
+		<aside class="col-sm-3">
+			<h3>工作經歷</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>春樹科技股份有限公司</span>
+					<span class="date">
+						2015-01-19 — 2018-03-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.friendo.com.tw/brands" target="_blank">link</a>
+				</div>
+				<div class="position">
+					前端工程師
+				</div>
+				<div class="summary">
+					<p>春樹科技是一間強調創意及結合數位工具的公司。曾打造粉多任務平台，基於此營運經驗，開始替更多客戶提供數位整合行銷的服務。
+						<br>其服務對象有(家樂福、ASUS、中國信託、P&G、元大...)</p>
+				</div>
+				<h4>簡述</h4>
+				<ul class="highlights">
+					<li class="bullet">主要負責專案中前端建置，參與跨部門會議協助評估可行性並尋找技術解決行銷問題及建立參考模型。</li>
+					<li class="bullet">實作設計稿，遵循優化網頁SEO概念及BEM命名規則完成RWD的樣板，適時使用CSS3特效及搭配JQuery、GSAP添加動畫。</li>
+					<li class="bullet">與後端工程師合作進行網站開發，前端使用Vue.js協助控制狀態及資料串接呈現並將前端程式整合進Asp.net MVC中，亦會協助管理公司Azure雲端伺服器調整和部署的業務。</li>
+					<li class="bullet">維護粉多平台組件iPage為客戶活動提供客製化樣板。</li>
+					<li class="bullet">建立及維護基礎工作包。使用Gulp完成自動化編譯流程，遵循7-1 pattern布製樣式分類及以sticky footer 建立基本layout，達到加速開發。</li>
+					<li class="bullet">管理部門方面，使用trello進行部門內任務排程及slacky加強溝通效率。</li>		
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>頗意多實業社</span>
+					<span class="date">
+						2013-08-19 — 2014-12-01
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="http://www.point.idv.tw/" target="_blank">link</a>
+				</div>
+				<div class="position">
+					工程師
+				</div>
+				<div class="summary">
+					<p>頗意多設計提供多項視覺設計服務</p>
+				</div>
+				<h4>簡述</h4>
+				<ul class="highlights">
+					<li class="bullet">擔任工程師與設計師合作，安排素材建立形象網站及EDM</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>服兵役</span>
+					<span class="date">
+						2012-08-06 — 2013-07-05
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href=""></a>
+				</div>
+				<div class="position">
+					101-1梯考選預備士官
+				</div>
+				<div class="summary">
+					<p></p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="reference" class="row">
+			<aside class="col-sm-3">
+				<h3>精選案例</h3>
+			</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-12">
+					<h4 class="strike-through">
+						<span>展示如下</span>
+					</h4>
+					<ul class="highlights">
+						<li class="bullet">支援手勢操作Canvas調整上傳圖片模型<a class="pull-right" href="https://kang-hu.github.io/playImage/" target="_blank">link</a></li>
+						<li class="bullet">前端基本工作包（Gulp）<a class="pull-right" href="https://github.com/kang-hu/work_startkit/tree/master/basic" target="_blank">link</a></li>
+						<li class="bullet">專案—晶碩舒適警告<a class="pull-right" href="http://site.friendo.com.tw/pegavisionwarning?" target="_blank">link</a></li>
+						<li class="bullet">專案—華碩美景對決<a class="pull-right" href="https://www.asus.com/tw/event/photopk/" target="_blank">link</a></li>
+						<li class="bullet">專案—元大財神金雞利<a class="pull-right" href="http://www.yuantafutures.com.tw/goldenrooster/index.aspx" target="_blank">link</a></li>
+						<li class="bullet">專案—家樂福Brics<a class="pull-right" href="http://carrefour.friendo.com.tw/brics" target="_blank">link</a></li>
+						<li class="bullet">粉多任務iPage-P&G<a class="pull-right" href="http://www.friendo.com.tw/Mission/4120" target="_blank">link</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</section>
+
+	<section id="education" class="row">
+		<aside class="col-sm-3">
+			<h3>教育程度</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>元智大學</span>
+					<span class="date">
+						2008-09-01 — 2012-06-30
+					</span>
+				</h4>
+				<div class="area">
+					資訊管理學系
+				</div>
+				<div class="studyType">
+					學士
+				</div>
+				<h4>主要課程</h4>
+				<ul class="courses">
+					<li>Programing(Java)</li>
+					<li>Database</li>
+					<li>System analysis</li>
+					<li>Marketing</li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>語言</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="language">
+					<h4><strong>中文</strong></h4>	
+				</div>
+				<div class="fluency">
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div class="language">
+					<h4><strong>英文</strong></h4>
+				</div>
+				<div class="fluency">
+					TOEIC 720 (2011)
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="interests" class="row">
+		<aside class="col-sm-3">
+			<h3>興趣</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>旅行</h4>
+				</div>
+				<ul class="keywords">
+					<li><a href="https://travel98.com/member/6300" target="_blank">Blog</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>攝影</h4>
+				</div>
+				<ul class="keywords">
+					<li><a href="https://www.flickr.com/photos/kanghu/" target="_blank">Flickr</a></li>
+				</ul>
+			</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="languages" class="row">
+		<aside class="col-sm-3">
+			<h3>自傳</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+				<div class="col-sm-12">
+					<p>關於選擇前端工程師這一職業，是自己的興趣及過去學習背景所決定。我喜歡旅行及攝影，旅行，安排行程是一門功課，途中能收穫許多新的體驗，舉例如購票搭車在各國有不同的流程；攝影，讓我熱愛畫面能去思考畫面結構，留心細節。在大學時主修資訊管理學系，學習程式語言設計其後主要課程為資料庫及資料結構並選修網頁課程，第一次打開編輯器撰寫Html標籤。剛出社會希望接觸視覺比重多的網頁製作，於是進入頗意多設計擔任工程師，與設計師合作規劃及製作靜態形象網頁和廠商edm，對CSS和photoshop操作有更多的認識。期間接觸文偉說學習Wordpress並參與實際製作客戶專案。此時決定在前端領域扎根，開始在春樹科技擔任前端工程師。</p>
+					<p>任職春樹初期，在前輩指導下學習網頁技術，負責公司產品組件iPage為廠商進行樣板客製，實作RWD的活動網站切版，並開始學習撰寫JS運用JQuery與GSAP等等函式庫添加網頁動畫。逐步熟稔後開始與後端工程師合作進行資料串接，早期使用過Angular其後轉為使用Vue.js來控制前台狀態、資料加速完成流程，能將前端程式整合進ASP.NET MVC。其後開始獨立負責專案前端開發並參與跨部門會議，對企劃人員的提案需求進行可行性評估及尋找解決或替代方案，與設計討論設計稿實現及動畫腳本或在專案啟動製作前建立模型加強共識。在部門內部，也開始有帶領新人上手部門工作，能協助安排學習項目分享自身經驗，更在任職後期獲得了一次代理部門主管的經驗，使用Trello進行安排工作、Slack加強溝通。</p>
+					<p>在歷經幾個腳色變換體驗不同的視野後，未來更謙卑地接受指教持續精進自己。熱愛生活，接受各種體驗帶來的感受，讓自己持續擁有追求美好的熱情，對工作認真負責。</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	</div>
+	
+	</body>
 </html>
