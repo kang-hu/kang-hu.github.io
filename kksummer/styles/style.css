@@ -670,7 +670,7 @@
 }
 
 .page-sec {
-  padding: 60px 0 0 0;
+  padding: 60px 0;
   position: relative;
 }
 
@@ -764,14 +764,19 @@
   .page-col {
     white-space: normal;
     display: inline-block;
-    width: 90%;
+    width: 80%;
     float: none;
     vertical-align: top;
   }
+  .page-col .card {
+    margin: 0 0 60px 0;
+  }
 }
 
-.page-col .card {
-  margin: 0 0 120px 0;
+@media (min-width: 768px) {
+  .page-col .card {
+    margin: 0 0 60px 0;
+  }
 }
 
 .page-col:nth-child(odd) .card-comment {
@@ -780,13 +785,13 @@
 
 .page-col:nth-child(odd) .card-comment:before {
   background: url("../assets/recomend_a.png") left bottom no-repeat;
-  background-size: 140px auto;
-  width: 140px;
-  height: 120px;
+  background-size: 100px auto;
+  width: 100px;
+  height: 74px;
   position: absolute;
   content: '';
   left: 0px;
-  top: -90px;
+  top: -48px;
 }
 
 .page-col:nth-child(even) .card-comment {
@@ -795,19 +800,13 @@
 
 .page-col:nth-child(even) .card-comment:before {
   background: url("../assets/recomend_b.png") left bottom no-repeat;
-  background-size: 140px auto;
-  width: 140px;
-  height: 120px;
+  background-size: 100px auto;
+  width: 100px;
+  height: 74px;
   position: absolute;
   content: '';
   left: 0px;
-  top: -90px;
-}
-
-@media (min-width: 640px) {
-  .page-col .card-comment {
-    min-height: 196px;
-  }
+  top: -48px;
 }
 
 .page-col .card-comment.card-comment-k {
@@ -816,7 +815,10 @@
 
 .page-col .card-comment.card-comment-k:before {
   background: url("../assets/recomend_k.png") left bottom no-repeat;
-  background-size: 140px auto;
+  background-size: 100px auto;
+  position: absolute;
+  left: 0px;
+  top: -48px;
 }
 
 .page-sub {
@@ -1219,7 +1221,7 @@
   padding: 10px 20px;
   width: auto;
   text-align: center;
-  margin: 0 0 40px 0;
+  margin: 40px 0 0px 0;
 }
 
 .page-more:hover {
@@ -1238,14 +1240,8 @@
 }
 
 .brickk-wrapper .card-product .detail .title {
-  margin: 0px 0 20px;
+  margin: 0px 0 4px;
   text-align: center;
-}
-
-@media (max-width: 640px) {
-  .brickk-wrapper .card-product .detail .title {
-    min-height: 50px;
-  }
 }
 
 .brickk-wrapper .card-info {
@@ -1379,14 +1375,13 @@
 
 .card-comment {
   color: #fff;
-  font-size: 16px;
-  border-radius: 20px;
+  font-size: 14px;
+  border-radius: 10px;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0 0 60px 0;
-  padding: 60px 40px 40px;
-  min-height: 172px;
+  margin: 0 0 0px 0;
+  padding: 20px 10px;
 }
 
 .brickk-wrapper footer {
