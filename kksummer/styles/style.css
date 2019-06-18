@@ -173,6 +173,15 @@
   }
 }
 
+@media (min-width: 1680px) {
+  .summer-index-kv__box {
+    width: 48vw;
+    height: 28vw;
+    max-width: none;
+    max-height: none;
+  }
+}
+
 .summer-index-kv .summer-index-kv__bg {
   background: url("../assets/kksummer_kv_m.jpg") center center no-repeat;
   background-size: 100% auto;
@@ -250,7 +259,7 @@
         -ms-transform: rotate(-8deg) skew(-7deg);
             transform: rotate(-8deg) skew(-7deg);
     left: 300px;
-    top: 164px;
+    top: 170px;
     padding: 4px 10px 4px 50px;
   }
   .summer-kv-title-dcode span {
@@ -425,7 +434,7 @@
   .summer-kv-sun {
     left: 26%;
     top: 7%;
-    height: 8vw;
+    height: 5vw;
   }
 }
 
