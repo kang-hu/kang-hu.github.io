@@ -32,6 +32,10 @@
   background-size: cover;
 }
 
+.is-page .toggle-btn span {
+  background-color: #ffffff;
+}
+
 .is-page.active .nav-home {
   background: url("../assets/icon_home.png") center center no-repeat;
   background-size: cover;
@@ -139,12 +143,15 @@
   width: 30px;
   height: 5px;
   background-color: #0093a9;
-  background-color: #ffffff;
   margin: 5px;
   border-radius: 10px;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
+}
+
+.toggle-btn.active span {
+  background-color: #0093a9 !important;
 }
 
 .toggle-btn.active span:nth-child(1) {
@@ -276,6 +283,11 @@
 .summer-kv-title-dcode.is-front {
   z-index: 10;
   background: none;
+}
+
+.summer-kv-title-dcode.is-front span {
+  position: relative;
+  z-index: 999;
 }
 
 .summer-kv-title-dcode.is-bg {
