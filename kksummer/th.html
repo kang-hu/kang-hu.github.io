@@ -10,13 +10,29 @@
     <link rel="stylesheet" href="styles/style.css"/>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
   </head>
   <body>
     <div class="brickk-wrapper">
-      <header>
-        <div class="container"><a href="https://www.kkday.com/ja" class="logo" data-check-cid="1"></a></div>
+      <header class="is-page" id="header">
+        <div class="container">
+          <div class="nav-hd"><a class="logo" href="https://www.kkday.com/ja" data-check-cid="1"></a>
+            <div class="toggle-btn" id="nav-btn"><span></span><span></span><span></span></div><a class="nav-home" href="index.html"></a>
+          </div>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <div class="container">
+            <ul class="nav-menu-list">
+              <li class="nav-menu-item"><a class="nav-link nav-link-tw" href="tw.html"></a></li>
+              <li class="nav-menu-item"><a class="nav-link nav-link-hk" href="hk.html"></a></li>
+              <li class="nav-menu-item"><a class="nav-link nav-link-kr" href="kr.html"></a></li>
+              <li class="nav-menu-item"><a class="nav-link nav-link-hi" href="hi.html"></a></li>
+              <li class="nav-menu-item"><a class="nav-link nav-link-th" href="th.html"></a></li>
+            </ul>
+          </div>
+        </div>
       </header>
       <div id="app">
         <div class="page-kv page-kv--th"><a class="page-title" href="https://www.kkday.com/ja/product/productlist/A01-010?countryname=%E3%82%BF%E3%82%A4" target="_blank"></a></div>
@@ -134,7 +150,7 @@
           </div>
           <div class="page-current">
             <div class="container">
-              <div class="page-current-row"><a class="page-current-link" href="#tw"><i class="page-icon page-icon-tw"></i></a><a class="page-current-link" href="#hk"><i class="page-icon page-icon-hk"></i></a><a class="page-current-link" href="#kr"><i class="page-icon page-icon-kr"></i></a><a class="page-current-link" href="#hi"><i class="page-icon page-icon-hi"></i></a><a class="page-current-link is-current" href="#th"><i class="page-icon page-icon-th"></i></a></div>
+              <div class="page-current-row"><a class="page-current-link" href="tw.html"><i class="page-icon page-icon-tw"></i></a><a class="page-current-link" href="hk.html"><i class="page-icon page-icon-hk"></i></a><a class="page-current-link" href="kr.html"><i class="page-icon page-icon-kr"></i></a><a class="page-current-link" href="hi.html"><i class="page-icon page-icon-hi"></i></a><a class="page-current-link is-current" href="th.html"><i class="page-icon page-icon-th"></i></a></div>
             </div>
           </div>
         </div>
