@@ -110,6 +110,10 @@ a.logo {
   background-image: url(https://image.kkday.com/image/get/s1.kkday.com/campaign_846/20190221072342_PZ3y6/png);
 }
 
+footer a.logo {
+  background-image: url(https://image.kkday.com/image/get/s1.kkday.com/campaign_441/20190513064225_7NbTO/png);
+}
+
 .brickk-wrapper header {
   position: fixed;
   top: 0px;

@@ -23,6 +23,24 @@
   background-size: auto 100%;
 }
 
+.is-page a.logo {
+  background-image: url(https://image.kkday.com/image/get/s1.kkday.com/campaign_441/20190513064225_7NbTO/png);
+}
+
+.is-page .nav-home {
+  background: url("../assets/icon_home_w.png") center center no-repeat;
+  background-size: cover;
+}
+
+.is-page.active .nav-home {
+  background: url("../assets/icon_home.png") center center no-repeat;
+  background-size: cover;
+}
+
+.is-page.active .toggle-btn span {
+  background-color: #0093a9;
+}
+
 .nav-hd {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,6 +125,7 @@
   display: inline-block;
   margin: 8px 0 0 0;
   z-index: 999;
+  cursor: pointer;
 }
 
 @media (min-width: 992px) {
@@ -120,6 +139,7 @@
   width: 30px;
   height: 5px;
   background-color: #0093a9;
+  background-color: #ffffff;
   margin: 5px;
   border-radius: 10px;
   -webkit-transition: all .3s;
@@ -166,8 +186,8 @@
 
 @media (min-width: 992px) {
   .summer-index-kv__box {
-    width: 62vw;
-    height: 36vw;
+    width: 74vw;
+    height: 38vw;
     max-width: none;
     max-height: none;
   }
@@ -214,6 +234,16 @@
           transform: translate(-50%, -50%);
 }
 
+.summer-kv-title .hide-img {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .summer-kv-title-box {
   position: absolute;
   top: 0;
@@ -251,6 +281,12 @@
 .summer-kv-title-dcode.is-bg {
   background: #ededed;
   color: #ededed;
+}
+
+.summer-kv-title-dcode.is-bg span {
+  width: 80px;
+  height: 24px;
+  display: block;
 }
 
 @media (min-width: 992px) {
@@ -330,6 +366,7 @@
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  z-index: 11;
 }
 
 @media (min-width: 992px) {
@@ -471,6 +508,48 @@
     height: 2vw;
     left: 420px;
     top: -3vw;
+  }
+}
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  background: url("../assets/kksummer_scroll.png") center center no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 70px;
+  left: 50%;
+  bottom: 10px;
+  -webkit-animation: bounce 1s ease infinite;
+          animation: bounce 1s ease infinite;
+  cursor: pointer;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .scroll-down {
+    display: block;
   }
 }
 
