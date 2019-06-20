@@ -253,6 +253,7 @@
 @media (max-width: 992px) {
   .summer-kv-title {
     margin: 15% 0 0 0;
+    position: relative;
   }
 }
 
@@ -320,7 +321,6 @@
     padding: 44% 0 20% 0;
     display: inline-block;
     margin: 0px 0 0 16px;
-    font-size: 40px;
   }
 }
 
