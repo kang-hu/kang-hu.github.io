@@ -288,12 +288,9 @@
 
 .summer-kv-title-dcode {
   position: absolute;
-  -webkit-transform: rotate(-8deg) skew(-7deg);
-      -ms-transform: rotate(-8deg) skew(-7deg);
-          transform: rotate(-8deg) skew(-7deg);
   left: 58%;
   top: 74%;
-  font-size: 16px;
+  font-size: 30px;
   font-weight: bold;
   background: #ededed;
   color: #135d84;
@@ -308,7 +305,6 @@
 
 .summer-kv-title-dcode.is-front span {
   position: relative;
-  z-index: 999;
 }
 
 .summer-kv-title-dcode.is-bg {
