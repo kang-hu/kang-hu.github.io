@@ -287,10 +287,10 @@
 }
 
 .summer-kv-title-dcode {
-  position: absolute;
+  position: relative;
   left: 58%;
   top: 74%;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   background: #ededed;
   color: #135d84;
