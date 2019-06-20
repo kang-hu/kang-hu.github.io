@@ -178,6 +178,18 @@
   overflow: hidden;
 }
 
+@media (min-width: 1680px) {
+  .summer-index-kv {
+    min-height: 900px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .summer-index-kv {
+    min-height: 1440px;
+  }
+}
+
 .summer-index-kv__box {
   position: absolute;
   width: 84vw;
@@ -202,10 +214,8 @@
 
 @media (min-width: 1680px) {
   .summer-index-kv__box {
-    width: 48vw;
-    height: 28vw;
-    max-width: none;
-    max-height: none;
+    width: 84vw;
+    height: 44vw;
   }
 }
 
@@ -232,8 +242,8 @@
 
 .summer-kv-title {
   position: absolute;
-  background-size: 100% auto;
   width: 110%;
+  padding-bottom: 63%;
   left: 50%;
   top: 10%;
   -webkit-transform: translate(-50%, -50%);
@@ -241,28 +251,39 @@
           transform: translate(-50%, -50%);
 }
 
-.summer-kv-title .hide-img {
-  position: absolute;
-  background: rgba(19, 165, 189, 0.1);
-  z-index: 2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+@media (min-width: 992px) {
+  .summer-kv-title {
+    width: 460px;
+    height: 460px;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(-15%, -10%);
+        -ms-transform: translate(-15%, -10%);
+            transform: translate(-15%, -10%);
+  }
 }
 
-.summer-kv-title-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+@media (min-width: 1680px) {
+  .summer-kv-title {
+    width: 820px;
+    height: 820px;
+    -webkit-transform: translate(-10%, 1%);
+        -ms-transform: translate(-10%, 1%);
+            transform: translate(-10%, 1%);
+  }
 }
 
-.summer-kv-title-img {
+.summer-kv-title .kv-title {
+  position: absolute;
   width: 100%;
-  position: relative;
-  z-index: 1;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.summer-kv-title .kv-title-20 {
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085849_oENmw/png") no-repeat center top;
+  background-size: 100% auto;
 }
 
 .summer-kv-title-dcode {
@@ -271,7 +292,7 @@
       -ms-transform: rotate(-8deg) skew(-7deg);
           transform: rotate(-8deg) skew(-7deg);
   left: 58%;
-  top: 75%;
+  top: 74%;
   font-size: 16px;
   font-weight: bold;
   background: #ededed;
@@ -302,6 +323,13 @@
   display: block;
 }
 
+@media (min-width: 1680px) {
+  .summer-kv-title-dcode.is-bg span {
+    width: 140px;
+    height: 46px;
+  }
+}
+
 @media (min-width: 992px) {
   .summer-kv-title-dcode {
     -webkit-transform: rotate(-8deg) skew(-7deg);
@@ -317,15 +345,12 @@
   }
 }
 
-@media (min-width: 992px) {
-  .summer-kv-title {
-    width: 460px;
-    height: 460px;
-    top: 0%;
-    left: 0%;
-    -webkit-transform: translate(-15%, -10%);
-        -ms-transform: translate(-15%, -10%);
-            transform: translate(-15%, -10%);
+@media (min-width: 1680px) {
+  .summer-kv-title-dcode {
+    left: 550px;
+    top: 300px;
+    font-size: 28px;
+    padding: 10px 10px 4px 80px;
   }
 }
 
@@ -395,6 +420,14 @@
   }
 }
 
+@media (min-width: 1680px) {
+  .summer-kv-note {
+    right: 8%;
+    top: 12%;
+    font-size: 18px;
+  }
+}
+
 .summer-kv-note .note-line1 {
   color: #135d82;
   font-size: 14px;
@@ -408,6 +441,13 @@
     background: #ecf3c9;
     display: inline-block;
     margin: 0 0 6px 0;
+  }
+}
+
+@media (min-width: 1680px) {
+  .summer-kv-note .note-line1 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
   }
 }
 
@@ -451,6 +491,12 @@
   }
 }
 
+@media (min-width: 1680px) {
+  .summer-kv-p2 {
+    left: 86%;
+  }
+}
+
 .summer-kv-p3 {
   background: url("../assets/kv_p3.png") 0 0 no-repeat;
   background-size: auto 100%;
@@ -466,6 +512,12 @@
   .summer-kv-p3 {
     left: 100%;
     bottom: 0%;
+  }
+}
+
+@media (min-width: 1680px) {
+  .summer-kv-p3 {
+    left: 96%;
   }
 }
 
@@ -485,6 +537,15 @@
     left: 26%;
     top: 7%;
     height: 5vw;
+  }
+}
+
+@media (min-width: 1680px) {
+  .summer-kv-sun {
+    width: 100%;
+    left: 40%;
+    top: 2%;
+    height: 8vw;
   }
 }
 
@@ -512,6 +573,13 @@
   }
 }
 
+@media (min-width: 1680px) {
+  .summer-kv-airplane {
+    right: 25%;
+    top: -4%;
+  }
+}
+
 @media (min-width: 992px) {
   .summer-kv-bird {
     background: url("../assets/kv_bird.png") 0 0 no-repeat;
@@ -521,6 +589,13 @@
     height: 2vw;
     left: 420px;
     top: -3vw;
+  }
+}
+
+@media (min-width: 1680px) {
+  .summer-kv-bird {
+    left: 46%;
+    top: -2vw;
   }
 }
 
@@ -548,12 +623,12 @@
 
 .scroll-down {
   position: absolute;
-  background: url("../assets/kksummer_scroll.png") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620080848_oN18J/png") center center no-repeat;
   background-size: cover;
-  width: 20px;
-  height: 70px;
+  width: 26px;
+  height: 42px;
   left: 50%;
-  bottom: 10px;
+  bottom: 30px;
   -webkit-animation: bounce 1s ease infinite;
           animation: bounce 1s ease infinite;
   cursor: pointer;
@@ -1861,12 +1936,4 @@
 
 .tc {
   text-align: center;
-}
-
-.dcode-box {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
 }
