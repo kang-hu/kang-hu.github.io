@@ -287,6 +287,12 @@
   top: 0;
 }
 
+@media (max-width: 992px) {
+  .summer-kv-title .kv-title {
+    display: none;
+  }
+}
+
 .summer-kv-title .kv-title-20 {
   background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085849_oENmw/png") no-repeat center top;
   background-size: 100% auto;
