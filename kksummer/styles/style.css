@@ -1,25 +1,25 @@
 .nav-link-tw {
-  background: url("../assets/nav_tw.png") no-repeat center center;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091646_fHP7p/png") no-repeat center center;
   background-size: auto 100%;
 }
 
 .nav-link-hk {
-  background: url("../assets/nav_hk.png") no-repeat center center;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091651_qufzj/png") no-repeat center center;
   background-size: auto 100%;
 }
 
 .nav-link-kr {
-  background: url("../assets/nav_kr.png") no-repeat center center;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620092255_X9RF3/png") no-repeat center center;
   background-size: auto 100%;
 }
 
 .nav-link-hi {
-  background: url("../assets/nav_hi.png") no-repeat center center;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091658_zwC20/png") no-repeat center center;
   background-size: auto 100%;
 }
 
 .nav-link-th {
-  background: url("../assets/nav_th.png") no-repeat center center;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091654_Ojxs5/png") no-repeat center center;
   background-size: auto 100%;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .is-page .nav-home {
-  background: url("../assets/icon_home_w.png") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620080913_3CGAg/png") center center no-repeat;
   background-size: cover;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .is-page.active .nav-home {
-  background: url("../assets/icon_home.png") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091900_XhkxN/png") center center no-repeat;
   background-size: cover;
 }
 
@@ -113,7 +113,7 @@
 @media (min-width: 992px) {
   .nav-home {
     display: block;
-    background: url("../assets/icon_home.png") center center no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091900_XhkxN/png") center center no-repeat;
     background-size: cover;
     position: relative;
     width: 40px;
@@ -220,7 +220,7 @@
 }
 
 .summer-index-kv .summer-index-kv__bg {
-  background: url("../assets/kksummer_kv_m.jpg") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091606_wDOxy/jpg") center center no-repeat;
   background-size: 100% auto;
   position: absolute;
   width: 100%;
@@ -235,7 +235,7 @@
 
 @media (min-width: 992px) {
   .summer-index-kv .summer-index-kv__bg {
-    background: url("../assets/kksummer_kv_pc.png") center center no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085836_ySU9n/png") center center no-repeat;
     background-size: 100% auto;
   }
 }
@@ -281,6 +281,16 @@
   }
 }
 
+.summer-kv-title.is-5000 {
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620080901_ZlYiT/png") no-repeat center top;
+  background-size: 100% auto;
+}
+
+.summer-kv-title.is-ori {
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090238_AT8YC/png") no-repeat center top;
+  background-size: 100% auto;
+}
+
 .summer-kv-title .kv-title {
   position: absolute;
   width: 100%;
@@ -297,6 +307,11 @@
 
 .summer-kv-title .kv-title-20 {
   background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085849_oENmw/png") no-repeat center top;
+  background-size: 100% auto;
+}
+
+.summer-kv-title .kv-title-5000 {
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620080901_ZlYiT/png") no-repeat center top;
   background-size: 100% auto;
 }
 
@@ -366,6 +381,11 @@
   }
 }
 
+.summer-kv-title-dcode.is-5000 .text {
+  color: #13a5bd;
+  font-size: 14px;
+}
+
 @media (min-width: 992px) {
   .summer-kv-title-dcode {
     -webkit-transform: rotate(-8deg) skew(-7deg);
@@ -388,6 +408,9 @@
     top: 310px;
     font-size: 28px;
     padding: 10px 10px 4px 60px;
+  }
+  .summer-kv-title-dcode.is-5000 .text {
+    font-size: 24px;
   }
 }
 
@@ -414,17 +437,25 @@
 @media (min-width: 992px) {
   .summer-kv-slogan {
     color: #ffffff;
-    top: 70%;
+    left: 120px;
+    top: 90px;
     font-size: 20px;
     text-align: left;
-    left: 5%;
     -webkit-transform: translate(0%, 0);
         -ms-transform: translate(0%, 0);
             transform: translate(0%, 0);
+    text-shadow: 2px 2px 2px #CECECE;
   }
   .summer-kv-slogan span {
     font-size: 24px;
     letter-spacing: 4px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .summer-kv-slogan {
+    left: 340px;
+    top: 220px;
   }
 }
 
@@ -442,6 +473,10 @@
       -ms-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
   z-index: 11;
+}
+
+.summer-kv-note.is-ori {
+  display: none !important;
 }
 
 @media (min-width: 992px) {
@@ -493,7 +528,7 @@
 }
 
 .summer-kv-p1 {
-  background: url("../assets/kv_p1.png") 0 0 no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090618_dPC43/png") 0 0 no-repeat;
   background-size: auto 100%;
   position: absolute;
   width: 100%;
@@ -511,7 +546,7 @@
 }
 
 .summer-kv-p2 {
-  background: url("../assets/kv_p2.png") 0 0 no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090638_Hruk2/png") 0 0 no-repeat;
   background-size: auto 100%;
   position: absolute;
   width: 100%;
@@ -535,7 +570,7 @@
 }
 
 .summer-kv-p3 {
-  background: url("../assets/kv_p3.png") 0 0 no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090641_uBQ3F/png") 0 0 no-repeat;
   background-size: auto 100%;
   position: absolute;
   width: 100%;
@@ -559,7 +594,7 @@
 }
 
 .summer-kv-sun {
-  background: url("../assets/kv_sun.png") 0 0 no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090649_itZLi/png") 0 0 no-repeat;
   background-size: auto 100%;
   position: absolute;
   width: 100%;
@@ -588,7 +623,7 @@
 
 @media (min-width: 992px) {
   .summer-kv-tree {
-    background: url("../assets/kv_tree.png") 0 0 no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090653_WVyof/png") 0 0 no-repeat;
     background-size: auto 100%;
     position: absolute;
     width: 8vw;
@@ -600,7 +635,7 @@
 
 @media (min-width: 992px) {
   .summer-kv-airplane {
-    background: url("../assets/kv_airplane.png") 0 0 no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085832_csuV0/png") 0 0 no-repeat;
     background-size: 100% auto;
     position: absolute;
     width: 18vw;
@@ -619,7 +654,7 @@
 
 @media (min-width: 992px) {
   .summer-kv-bird {
-    background: url("../assets/kv_bird.png") 0 0 no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090613_Sp8qt/png") 0 0 no-repeat;
     background-size: auto 100%;
     position: absolute;
     width: 10vw;
@@ -634,6 +669,56 @@
     left: 46%;
     top: -2vw;
   }
+}
+
+.summer-kv-title.is-5000 .summer-kv-title-dcode {
+  left: 32%;
+}
+
+@media (max-width: 992px) {
+  .summer-kv-title.is-5000 .summer-kv-title-dcode.is-front {
+    padding: 47% 0 3% 0;
+  }
+  .summer-kv-title.is-5000 .summer-kv-title-dcode.is-bg {
+    width: 227px;
+    height: 24px;
+    margin: 49% 0 0 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .summer-kv-title.is-5000 .summer-kv-title-dcode {
+    left: 280px;
+    top: 200px;
+  }
+  .summer-kv-title.is-5000 .summer-kv-title-dcode.is-front {
+    padding: 4px 20px;
+  }
+  .summer-kv-title.is-5000 .summer-kv-title-dcode.is-bg {
+    padding: 4px 230px 4px 0;
+  }
+  .summer-kv-title.is-5000 .summer-kv-title-dcode.is-bg span {
+    width: 0;
+    height: 26px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .summer-kv-title.is-5000 .summer-kv-title-dcode {
+    left: 390px;
+    top: 332px;
+  }
+  .summer-kv-title.is-5000 .summer-kv-title-dcode.is-bg {
+    padding: 10px 290px 4px 30px;
+  }
+  .summer-kv-title.is-5000 .summer-kv-title-dcode.is-bg span {
+    width: 40px;
+    height: 30px;
+  }
+}
+
+.summer-kv-title.is-ori .summer-kv-title-dcode {
+  opacity: 0;
 }
 
 @-webkit-keyframes bounce {
@@ -903,7 +988,7 @@
 
 @media (min-width: 992px) {
   .deco-tw1 {
-    background: url("../assets/deco_tw1.png") center top no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091723_5CkzB/png") center top no-repeat;
     background-size: 100% auto;
     width: 36px;
     height: 250px;
@@ -915,7 +1000,7 @@
 
 @media (min-width: 992px) {
   .deco-tw2 {
-    background: url("../assets/deco_tw2.png") center top no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091736_ym6kn/png") center top no-repeat;
     background-size: 100% auto;
     width: 50px;
     height: 200px;
@@ -927,7 +1012,7 @@
 
 @media (min-width: 992px) {
   .deco-tw3 {
-    background: url("../assets/deco_tw3.png") center top no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091921_fGcvi/png") center top no-repeat;
     background-size: 100% auto;
     width: 90px;
     height: 200px;
@@ -939,7 +1024,7 @@
 
 @media (min-width: 992px) {
   .deco-hk1 {
-    background: url("../assets/deco_hk1.png") left top no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091925_H2vQk/png") left top no-repeat;
     background-size: 100% auto;
     width: 180px;
     height: 140px;
@@ -951,7 +1036,7 @@
 
 @media (min-width: 992px) {
   .deco-hk2 {
-    background: url("../assets/deco_hk2.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091729_XamNk/png") center bottom no-repeat;
     background-size: 100% auto;
     width: 40px;
     height: 250px;
@@ -963,7 +1048,7 @@
 
 @media (min-width: 992px) {
   .deco-kr1 {
-    background: url("../assets/deco_kr1.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091706_djRTn/png") center bottom no-repeat;
     background-size: 100% auto;
     width: 90px;
     height: 50px;
@@ -975,7 +1060,7 @@
 
 @media (min-width: 992px) {
   .deco-kr2 {
-    background: url("../assets/deco_kr2.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091732_06I3P/png") center bottom no-repeat;
     background-size: 100% auto;
     width: 80px;
     height: 200px;
@@ -987,7 +1072,7 @@
 
 @media (min-width: 992px) {
   .deco-kr3 {
-    background: url("../assets/deco_kr3.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091711_vK0BG/png") center bottom no-repeat;
     background-size: 100% auto;
     width: 100px;
     height: 110px;
@@ -999,7 +1084,7 @@
 
 @media (min-width: 992px) {
   .deco-hi1 {
-    background: url("../assets/deco_hi1.png") center top no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091949_2HQGt/png") center top no-repeat;
     background-size: 100% auto;
     width: 60px;
     height: 150px;
@@ -1011,7 +1096,7 @@
 
 @media (min-width: 992px) {
   .deco-hi2 {
-    background: url("../assets/deco_hi2.png") center top no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091702_7S9CZ/png") center top no-repeat;
     background-size: 100% auto;
     width: 40px;
     height: 110px;
@@ -1023,7 +1108,7 @@
 
 @media (min-width: 992px) {
   .deco-th1 {
-    background: url("../assets/deco_th1.png") center top no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091715_T7jNG/png") center top no-repeat;
     background-size: 100% auto;
     width: 46px;
     height: 56px;
@@ -1035,7 +1120,7 @@
 
 @media (min-width: 992px) {
   .deco-th2 {
-    background: url("../assets/deco_th2.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091719_DnbRe/png") center bottom no-repeat;
     background-size: 100% auto;
     width: 50px;
     height: 103px;
@@ -1046,13 +1131,13 @@
 }
 
 .introbg__tw {
-  background: url("../assets/kksummer_tw_m.jpg") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091620_yvU2i/jpg") center center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 992px) {
   .introbg__tw {
-    background: url("../assets/kksummer_tw_pc.jpg") center center no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090607_kDq8j/jpg") center center no-repeat;
     background-size: cover;
   }
 }
@@ -1062,18 +1147,18 @@
 }
 
 .intro__title__tw {
-  background: url("../assets/kksummer_intro_title_tw.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090206_S3pEg/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .introbg__hk {
-  background: url("../assets/kksummer_hk_m.jpg") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090704_ybNew/jpg") center center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 992px) {
   .introbg__hk {
-    background: url("../assets/kksummer_hk_pc.jpg") center center no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090134_RRIbv/jpg") center center no-repeat;
     background-size: cover;
   }
 }
@@ -1083,18 +1168,18 @@
 }
 
 .intro__title__hk {
-  background: url("../assets/kksummer_intro_title_hk.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090142_j3f5O/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .introbg__kr {
-  background: url("../assets/kksummer_kr_m.jpg") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090822_BWLwD/jpg") center center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 992px) {
   .introbg__kr {
-    background: url("../assets/kksummer_kr_pc.jpg") center center no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090232_Oz7cJ/jpg") center center no-repeat;
     background-size: cover;
   }
 }
@@ -1104,18 +1189,18 @@
 }
 
 .intro__title__kr {
-  background: url("../assets/kksummer_intro_title_kr.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090146_BcnTq/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .introbg__hi {
-  background: url("../assets/kksummer_hi_m.jpg") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090658_VxqkY/jpg") center center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 992px) {
   .introbg__hi {
-    background: url("../assets/kksummer_hi_pc.jpg") center center no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090130_UENtp/jpg") center center no-repeat;
     background-size: cover;
   }
 }
@@ -1125,18 +1210,18 @@
 }
 
 .intro__title__hi {
-  background: url("../assets/kksummer_intro_title_hi.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090137_leXBD/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .introbg__th {
-  background: url("../assets/kksummer_th_m.jpg") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091615_QhJ5B/jpg") center center no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 992px) {
   .introbg__th {
-    background: url("../assets/kksummer_th_pc.jpg") center center no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090248_vwvbx/jpg") center center no-repeat;
     background-size: cover;
   }
 }
@@ -1146,7 +1231,7 @@
 }
 
 .intro__title__th {
-  background: url("../assets/kksummer_intro_title_th.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620090204_T3DY1/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
@@ -1234,7 +1319,7 @@
 }
 
 .page-sec-title {
-  background: url("../assets/page_flag.png") center center no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084734_6zcrg/png") center center no-repeat;
   background-size: 300px auto;
   padding: 20px 0;
   margin: 0;
@@ -1259,7 +1344,7 @@
 
 @media (min-width: 992px) {
   .page-sec.page-sec1 .deco-cloud1 {
-    background: url("../assets/page_cloud.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084729_JuLI8/png") center bottom no-repeat;
     background-size: 100% auto;
     position: absolute;
     left: 50%;
@@ -1276,7 +1361,7 @@
 
 @media (min-width: 992px) {
   .page-sec.page-sec2 .deco-cloud2 {
-    background: url("../assets/deco_kr1.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620091706_djRTn/png") center bottom no-repeat;
     background-size: 100% auto;
     position: absolute;
     left: 50%;
@@ -1293,7 +1378,7 @@
 
 @media (min-width: 992px) {
   .page-sec.page-sec3 .deco-bird {
-    background: url("../assets/page_bird.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084721_YGt2g/png") center bottom no-repeat;
     background-size: 100% auto;
     position: absolute;
     left: 50%;
@@ -1340,7 +1425,7 @@
 }
 
 .page-col:nth-child(odd) .card-comment:before {
-  background: url("../assets/recomend_a.png") left bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085821_ZZ3M3/png") left bottom no-repeat;
   background-size: 100px auto;
   width: 100px;
   height: 74px;
@@ -1355,7 +1440,7 @@
 }
 
 .page-col:nth-child(even) .card-comment:before {
-  background: url("../assets/recomend_b.png") left bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085825_Z18Dv/png") left bottom no-repeat;
   background-size: 100px auto;
   width: 100px;
   height: 74px;
@@ -1370,7 +1455,7 @@
 }
 
 .page-col .card-comment.card-comment-k:before {
-  background: url("../assets/recomend_k.png") left bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085830_XBLdo/png") left bottom no-repeat;
   background-size: 100px auto;
   position: absolute;
   left: 0px;
@@ -1394,7 +1479,7 @@
 
 .page-sub .page-sub-title.discount-20 {
   height: 36px;
-  background: url("../assets/discount_title_20.png") center top no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085842_N4Hwf/png") center top no-repeat;
   background-size: auto 100%;
 }
 
@@ -1459,7 +1544,13 @@
 
 .page-sub .board .board-title .board-slogan.discount-20 {
   height: 83px;
-  background: url("../assets/discount_20.png") center top no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085839_URoaM/png") center top no-repeat;
+  background-size: auto 100%;
+}
+
+.page-sub .board .board-title .board-slogan.discount-5000 {
+  height: 70px;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620080921_3Ngwz/png") center top no-repeat;
   background-size: auto 100%;
 }
 
@@ -1472,7 +1563,13 @@
   .page-sub .board .board-title .board-slogan.discount-20 {
     height: 72px;
     width: 210px;
-    background: url("../assets/discount_20.png") center top no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085839_URoaM/png") center top no-repeat;
+    background-size: auto 100%;
+  }
+  .page-sub .board .board-title .board-slogan.discount-5000 {
+    height: 70px;
+    width: 290px;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620080921_3Ngwz/png") center top no-repeat;
     background-size: auto 100%;
   }
 }
@@ -1546,13 +1643,13 @@
   position: absolute;
   height: 25.5vw;
   top: -25.5vw;
-  background: url("../assets/page_bottom.png") 14% bottom no-repeat #f8f8f8;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084726_xO8vD/png") 14% bottom no-repeat #f8f8f8;
   background-size: 150% auto;
 }
 
 @media (min-width: 992px) {
   .page-bottom:before {
-    background: url("../assets/page_bottom.png") center bottom no-repeat #f8f8f8;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084726_xO8vD/png") center bottom no-repeat #f8f8f8;
     background-size: 100% auto;
     height: 17vw;
     top: -17vw;
@@ -1588,146 +1685,146 @@
 }
 
 .page-icon-tw {
-  background: url("../assets/page_icon_tw.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620082210_Eqo0T/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .page-icon-hk {
-  background: url("../assets/page_icon_hk.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085057_vaIO7/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .page-icon-kr {
-  background: url("../assets/page_icon_kr.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620082158_BFrKl/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .page-icon-hi {
-  background: url("../assets/page_icon_hi.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620080929_EmIhz/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .page-icon-th {
-  background: url("../assets/page_icon_th.png") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620082203_CPuoD/png") center bottom no-repeat;
   background-size: auto 100%;
 }
 
 .page-kv--tw {
-  background: url("../assets/page_header_tw_m.jpg") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085047_yAnji/jpg") center bottom no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .page-kv--tw {
-    background: url("../assets/page_header_tw.jpg") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085053_8pUpU/jpg") center bottom no-repeat;
     background-size: cover;
   }
 }
 
 .page-kv--tw .page-title {
-  background: url("../assets/page_title_tw.png") center 50% no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085411_YA28I/png") center 50% no-repeat;
   background-size: 100% auto;
 }
 
 @media (min-width: 768px) {
   .page-kv--tw .page-title {
-    background: url("../assets/page_title_tw.png") center 50% no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085411_YA28I/png") center 50% no-repeat;
     background-size: 24vw auto;
   }
 }
 
 .page-kv--hk {
-  background: url("../assets/page_header_hk_m.jpg") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084933_suNht/jpg") center bottom no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .page-kv--hk {
-    background: url("../assets/page_header_hk.jpg") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084938_7SC6c/jpg") center bottom no-repeat;
     background-size: cover;
   }
 }
 
 .page-kv--hk .page-title {
-  background: url("../assets/page_title_hk.png") center 50% no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085351_8vvWM/png") center 50% no-repeat;
   background-size: 100% auto;
 }
 
 @media (min-width: 768px) {
   .page-kv--hk .page-title {
-    background: url("../assets/page_title_hk.png") center 50% no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085351_8vvWM/png") center 50% no-repeat;
     background-size: 24vw auto;
   }
 }
 
 .page-kv--kr {
-  background: url("../assets/page_header_kr_m.jpg") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084944_ehVgZ/jpg") center bottom no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .page-kv--kr {
-    background: url("../assets/page_header_kr.jpg") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084950_Ef97i/jpg") center bottom no-repeat;
     background-size: cover;
   }
 }
 
 .page-kv--kr .page-title {
-  background: url("../assets/page_title_kr.png") center 50% no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085355_3YgF5/png") center 50% no-repeat;
   background-size: 100% auto;
 }
 
 @media (min-width: 768px) {
   .page-kv--kr .page-title {
-    background: url("../assets/page_title_kr.png") center 50% no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085355_3YgF5/png") center 50% no-repeat;
     background-size: 24vw auto;
   }
 }
 
 .page-kv--hi {
-  background: url("../assets/page_header_hi_m.jpg") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084740_KyjWP/jpg") center bottom no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .page-kv--hi {
-    background: url("../assets/page_header_hi.jpg") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084928_9p2li/jpg") center bottom no-repeat;
     background-size: cover;
   }
 }
 
 .page-kv--hi .page-title {
-  background: url("../assets/page_title_hi.png") center 50% no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085340_GqIxj/png") center 50% no-repeat;
   background-size: 100% auto;
 }
 
 @media (min-width: 768px) {
   .page-kv--hi .page-title {
-    background: url("../assets/page_title_hi.png") center 50% no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085340_GqIxj/png") center 50% no-repeat;
     background-size: 24vw auto;
   }
 }
 
 .page-kv--th {
-  background: url("../assets/page_header_th_m.jpg") center bottom no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085036_peSCF/jpg") center bottom no-repeat;
   background-size: cover;
 }
 
 @media (min-width: 768px) {
   .page-kv--th {
-    background: url("../assets/page_header_th.jpg") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085039_hERqa/jpg") center bottom no-repeat;
     background-size: cover;
   }
 }
 
 .page-kv--th .page-title {
-  background: url("../assets/page_title_th.png") center 50% no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085405_9HIb2/png") center 50% no-repeat;
   background-size: 100% auto;
 }
 
 @media (min-width: 768px) {
   .page-kv--th .page-title {
-    background: url("../assets/page_title_th.png") center 50% no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085405_9HIb2/png") center 50% no-repeat;
     background-size: 24vw auto;
   }
 }
@@ -1834,7 +1931,7 @@
 }
 
 .brickk-wrapper .page-blog {
-  background: url("../assets/pattern_1.png") #f8f8f8 center top repeat-x;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620085812_APMKD/png") #f8f8f8 center top repeat-x;
   background-size: auto 5vw;
   padding: 16vw 0 0 0;
 }
@@ -1847,7 +1944,7 @@
 
 @media (min-width: 992px) {
   .brickk-wrapper .page-blog .deco-cloud-blog {
-    background: url("../assets/page_cloud.png") center bottom no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620084729_JuLI8/png") center bottom no-repeat;
     background-size: 100% auto;
     position: absolute;
     left: 50%;
@@ -1882,7 +1979,7 @@
 }
 
 .brickk-wrapper .page-blog .blog-title .icon-tri {
-  background: url("../assets/icon_triangle.png") center top no-repeat;
+  background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620082220_zTkTI/png") center top no-repeat;
   background-size: 20px auto;
   display: block;
   position: absolute;
@@ -1906,7 +2003,7 @@
 
 @media (min-width: 992px) {
   .brickk-wrapper .page-blog .blog-title .icon-tri {
-    background: url("../assets/icon_triangle.png") center center no-repeat;
+    background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620082220_zTkTI/png") center center no-repeat;
     background-size: 20px auto;
     position: relative;
     display: inline-block;
