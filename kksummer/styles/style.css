@@ -214,8 +214,8 @@
 
 @media (min-width: 1680px) {
   .summer-index-kv__box {
-    width: 84vw;
-    height: 44vw;
+    width: 82vw;
+    height: 42vw;
   }
 }
 
@@ -273,11 +273,11 @@
 
 @media (min-width: 1680px) {
   .summer-kv-title {
-    width: 820px;
-    height: 820px;
-    -webkit-transform: translate(-10%, 1%);
-        -ms-transform: translate(-10%, 1%);
-            transform: translate(-10%, 1%);
+    width: 740px;
+    height: 740px;
+    -webkit-transform: translate(-8%, 1%);
+        -ms-transform: translate(-8%, 1%);
+            transform: translate(-8%, 1%);
   }
 }
 
@@ -384,10 +384,10 @@
 
 @media (min-width: 1680px) {
   .summer-kv-title-dcode {
-    left: 550px;
-    top: 300px;
+    left: 476px;
+    top: 310px;
     font-size: 28px;
-    padding: 10px 10px 4px 80px;
+    padding: 10px 10px 4px 60px;
   }
 }
 
@@ -662,8 +662,8 @@
   position: absolute;
   background: url("https://image.kkday.com/image/get/s1.kkday.com/campaign_1016/20190620080848_oN18J/png") center center no-repeat;
   background-size: cover;
-  width: 26px;
-  height: 42px;
+  width: 39px;
+  height: 63px;
   left: 50%;
   bottom: 30px;
   -webkit-animation: bounce 1s ease infinite;
@@ -675,6 +675,13 @@
 @media (min-width: 992px) {
   .scroll-down {
     display: block;
+  }
+}
+
+@media (min-width: 1680px) {
+  .scroll-down {
+    width: 39px;
+    height: 63px;
   }
 }
 
