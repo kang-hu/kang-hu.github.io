@@ -81,19 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/scripts/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/scripts/test.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/scripts/index.js":
-/*!******************************!*\
-  !*** ./src/scripts/index.js ***!
-  \******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/scripts/services/testApi.js":
+/*!*****************************************!*\
+  !*** ./src/scripts/services/testApi.js ***!
+  \*****************************************/
+/*! exports provided: getTest */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("(function () {\n  var galleryThumbs = new Swiper('.gallery-thumbs', {\n    spaceBetween: 10,\n    slidesPerView: 4,\n    loop: false,\n    freeMode: false,\n    loopedSlides: 6,\n    //looped slides should be the same\n    watchSlidesVisibility: true,\n    watchSlidesProgress: true,\n    slideThumbActiveClass: 'swiper-slide-thumb-active'\n  });\n  var galleryTop = new Swiper('.gallery-top', {\n    spaceBetween: 10,\n    loop: true,\n    loopedSlides: 6,\n    //looped slides should be the same\n    navigation: {\n      nextEl: '.swiper-button-next',\n      prevEl: '.swiper-button-prev'\n    },\n    thumbs: {\n      swiper: galleryThumbs\n    },\n    pagination: {\n      el: '.swiper-pagination',\n      type: 'bullets',\n      clickable: true\n    }\n  });\n})();\n\n//# sourceURL=webpack:///./src/scripts/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getTest\", function() { return getTest; });\nfunction getTest() {\n  return new Promise(function (resolve, reject) {\n    resolve('test1');\n  });\n}\n\n\n\n//# sourceURL=webpack:///./src/scripts/services/testApi.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/test.js":
+/*!*****************************!*\
+  !*** ./src/scripts/test.js ***!
+  \*****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var Scripts_services_testApi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! Scripts/services/testApi.js */ \"./src/scripts/services/testApi.js\");\n\nvar Name = ['Mike', 'Jacky', 'Andy'];\nName.forEach(function (obj, idx) {\n  return console.log(\"\".concat(idx, \" => \").concat(obj));\n});\nObject(Scripts_services_testApi_js__WEBPACK_IMPORTED_MODULE_0__[\"getTest\"])().then(function (res) {\n  console.log(res);\n});\n\n//# sourceURL=webpack:///./src/scripts/test.js?");
 
 /***/ })
 
