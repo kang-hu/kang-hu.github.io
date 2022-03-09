@@ -217,14 +217,14 @@ body {
 .rt-logo-img {
   width: 100px;
   height: 40px;
-  background: url(../thefaster/logo.6023b87e.png) center center no-repeat;
+  background: url(logo.a2279b4d.png) center center no-repeat;
   display: block;
 }
 @media screen and (max-width: 640px) {
   .rt-logo-img {
     width: 134px;
     height: 46px;
-    background: url(../thefaster/logo-m.31d5ea68.png) center center no-repeat;
+    background: url(logo-m.3d86baee.png) center center no-repeat;
     background-size: auto 100%;
   }
 }
@@ -257,14 +257,14 @@ body {
   bottom: 0;
   width: 100%;
   height: 150px;
-  background: url(../thefaster/ruru.30c688f2.svg) 240px 20px rgba(255, 255, 255, 0.75) no-repeat;
+  background: url(ruru.c1720d43.svg) 240px 20px rgba(255, 255, 255, 0.75) no-repeat;
   background-size: 100px 100px;
   border-top: 5px solid #532e1c;
 }
 @media screen and (max-width: 640px) {
   .game-msg {
     position: fixed;
-    background: url(../thefaster/ruru.30c688f2.svg) 40px 20px rgba(255, 255, 255, 0.75) no-repeat;
+    background: url(ruru.c1720d43.svg) 40px 20px rgba(255, 255, 255, 0.75) no-repeat;
     background-size: 120px 120px;
   }
 }
@@ -330,7 +330,7 @@ body {
           justify-content: center;
 }
 .game-msg .dead-s {
-  background: url(../thefaster/deadS.bd6d6013.svg) center center no-repeat;
+  background: url(deadS.add40c76.svg) center center no-repeat;
   background-size: 80px 80px;
   width: 80px;
   height: 60px;
@@ -364,7 +364,7 @@ body {
   height: 100%;
 }
 .popup-btn-close {
-  background: url(../thefaster/popup_close.e963974c.png) no-repeat center center;
+  background: url(popup_close.ac34981d.png) no-repeat center center;
   display: block;
   width: 60px;
   height: 60px;
@@ -373,7 +373,7 @@ body {
   top: -20px;
 }
 .popup-btn-check {
-  background: url(../thefaster/btn-check.80cd9291.png) no-repeat center center;
+  background: url(btn-check.1631cd0c.png) no-repeat center center;
   display: inline-block;
   width: 271px;
   height: 60px;
@@ -397,14 +397,14 @@ body {
   font-weight: bold;
 }
 .popup-start {
-  background: url(../thefaster/pop_bg_1.a9da54a1.png) center center no-repeat;
+  background: url(pop_bg_1.a765bb87.png) center center no-repeat;
 }
 .popup-start .game-rule {
   padding: 100px 40px 0 40px;
   word-wrap: break-word;
 }
 .popup-ticket-small {
-  background: url(../thefaster/pop_ticket_1.a450d4f2.png) center center no-repeat;
+  background: url(pop_ticket_1.292c44da.png) center center no-repeat;
 }
 .popup-ticket-small .msg-area {
   position: absolute;
@@ -418,7 +418,7 @@ body {
   padding: 0 5px;
 }
 .popup-ticket-big {
-  background: url(../thefaster/pop_ticket_2.366e4700.png) center center no-repeat;
+  background: url(pop_ticket_2.5c524300.png) center center no-repeat;
 }
 .popup-ticket-big .msg-area {
   position: absolute;
@@ -435,7 +435,7 @@ body {
   padding: 0 5px;
 }
 .popup-over .dead-s {
-  background: url(../thefaster/deadS.bd6d6013.svg) center center no-repeat;
+  background: url(deadS.add40c76.svg) center center no-repeat;
   background-size: 220px 220px;
   width: 220px;
   height: 220px;
@@ -493,11 +493,8 @@ body {
           justify-content: center;
 }
 .again-btn {
-  background: url(../thefaster/btn-again.d11ef16b.png) no-repeat center center;
+  background: url(btn-again.8a12e753.png) no-repeat center center;
   display: inline-block;
   width: 271px;
   height: 60px;
 }
-
-
-/*# sourceMappingURL=/style.f3ee9ab8.css.map */
