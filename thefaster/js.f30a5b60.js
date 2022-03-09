@@ -38949,37 +38949,37 @@ function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "functio
 
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 },{"./TweenLite.js":"sU2v","./TimelineLite.js":"Rh1e","./TimelineMax.js":"c5lM","./TweenMax.js":"LScF","./CSSPlugin.js":"KE4Q","./AttrPlugin.js":"Lwey","./RoundPropsPlugin.js":"gZZs","./DirectionalRotationPlugin.js":"BYZS","./BezierPlugin.js":"JjQl","./EasePack.js":"K9um"}],"bP4I":[function(require,module,exports) {
-module.exports = "thefaster/pc_bg.17d770dc.jpg";
+module.exports = "pc_bg.17d770dc.jpg";
 },{}],"ZKko":[function(require,module,exports) {
-module.exports = "thefaster/mobile_bg.0d8ce088.jpg";
+module.exports = "mobile_bg.0d8ce088.jpg";
 },{}],"hPQL":[function(require,module,exports) {
-module.exports = "thefaster/deal_hand.f5f5f18b.png";
+module.exports = "deal_hand.f5f5f18b.png";
 },{}],"rK6m":[function(require,module,exports) {
-module.exports = "thefaster/T1.eaa47ae3.png";
+module.exports = "T1.eaa47ae3.png";
 },{}],"gDNl":[function(require,module,exports) {
-module.exports = "thefaster/T3.974a1577.png";
+module.exports = "T3.974a1577.png";
 },{}],"JV3g":[function(require,module,exports) {
-module.exports = "thefaster/T5.87b97198.png";
+module.exports = "T5.87b97198.png";
 },{}],"njIR":[function(require,module,exports) {
-module.exports = "thefaster/T7.576e40db.png";
+module.exports = "T7.576e40db.png";
 },{}],"aqcO":[function(require,module,exports) {
-module.exports = "thefaster/T11.8851862c.png";
+module.exports = "T11.8851862c.png";
 },{}],"JSDE":[function(require,module,exports) {
-module.exports = "thefaster/c1.e19d4794.png";
+module.exports = "c1.e19d4794.png";
 },{}],"IZLf":[function(require,module,exports) {
-module.exports = "thefaster/c11.515d8267.png";
+module.exports = "c11.515d8267.png";
 },{}],"hy6d":[function(require,module,exports) {
-module.exports = "thefaster/c12.00244830.png";
+module.exports = "c12.00244830.png";
 },{}],"K8Wa":[function(require,module,exports) {
-module.exports = "thefaster/c13.0d922198.png";
+module.exports = "c13.0d922198.png";
 },{}],"NxP4":[function(require,module,exports) {
-module.exports = "thefaster/G.96c29ca0.png";
+module.exports = "G.96c29ca0.png";
 },{}],"HKOG":[function(require,module,exports) {
-module.exports = "thefaster/game_title.d602ae8c.png";
+module.exports = "game_title.d602ae8c.png";
 },{}],"pmXz":[function(require,module,exports) {
-module.exports = "thefaster/boss.62e736c8.png";
+module.exports = "boss.62e736c8.png";
 },{}],"XmEb":[function(require,module,exports) {
-module.exports = "thefaster/start_icon.ff572e39.png";
+module.exports = "start_icon.ff572e39.png";
 },{}],"hmRC":[function(require,module,exports) {
 var getKeys = require('./_object-keys');
 var toIObject = require('./_to-iobject');
