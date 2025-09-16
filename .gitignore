@@ -1,0 +1,38 @@
+# 忽略常見的 Node.js 檔案
+/node_modules
+/dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# 排除本機開發環境相關的檔案
+# 這包括資料庫、密碼、API 金鑰等敏感資訊
+# 請根據你的專案實際情況調整
+# 例如:
+# /db/
+# /src/stores/
+# /secrets/
+# .env.local
+# .env.development.local
+
+# 排除資料庫檔案
+# 這通常是 SQLite 或其他文件型資料庫
+*.sqlite3
+*.db
+/database.sql
+/data/
+
+
+# 忽略日誌檔
+# 如果你有記錄 log 的習慣
+*.log
+/logs/
+/temp/
+
+# 排除作業系統和編輯器自動產生的檔案
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.env
