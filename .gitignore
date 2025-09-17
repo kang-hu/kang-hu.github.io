@@ -31,6 +31,7 @@ yarn-error.log*
 /temp/
 
 # 排除作業系統和編輯器自動產生的檔案
+*.DS_Store
 .DS_Store
 Thumbs.db
 .vscode/
